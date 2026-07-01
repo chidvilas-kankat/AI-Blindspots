@@ -3,75 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blindspots of AI Adoption — CloudNuro Executive Summit</title>
-  <meta name="description" content="Five conversations enterprise leadership is afraid to have. One afternoon that changes how you see AI. August 13, 2026 — Virtual, Global. Free to attend.">
-  <meta property="og:title" content="Blindspots of AI Adoption — CloudNuro Executive Summit">
-  <meta property="og:description" content="The AI race is on. Most enterprises are losing and don't know why. Five panels. Five blindspots. One afternoon.">
+  <title>Enterprise AI Governance Summit 2026 | The Blindspots of AI Adoption</title>
+  <meta name="description" content="Flagship AI Summit 2026, Chicago Edition. AI is no longer an innovation challenge — it is a governance challenge. Five decisions every executive team must make before scaling AI. August 13, 2026 — Virtual, 11:00 AM–3:00 PM EST. Free to attend.">
+  <meta property="og:title" content="The Blindspots of AI Adoption — CloudNuro Executive Governance Summit 2026">
+  <meta property="og:description" content="AI adoption is no longer the challenge — governance is. See the five governance failures behind enterprise AI, and the operating model that closes them.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#7B47E0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet">
   <style>
     /* ================= CLOUDNURO SUMMIT — LIGHT THEME ================= */
     :root {
-      /* Brand purple */
-      --purple:      #7B47E0;   /* signal / primary */
-      --purple-mid:  #6A34D6;   /* small purple text on white (AA-safe) */
-      --purple-deep: #4417AD;   /* hover / depth */
-      --lav-100:     #F5F2FB;   /* soft brand fill */
-      --lav-200:     #EDE3FB;
-      --lav-300:     #E4D6F7;
-      --purple-tint: rgba(123,71,224,0.08);
-
-      /* Neutrals */
-      --text:        #111827;
-      --text-muted:  #55607A;
-      --text-faint:  #9AA0AE;
-      --bg:          #FBFAFE;
-      --bg-cool:     #F4F5FB;
-      --surface:     #FFFFFF;
-      --border:      #ECE8F6;
-      --border-2:    #DED7EF;
-
-      /* Semantic (paired with icon/label) */
-      --amber:  #C9820F;
-      --red:    #C93A24;
-      --green:  #4E9A3E;
-
-      /* Type */
-      --font: 'Nunito Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      --fs-eyebrow: clamp(0.72rem, 0.68rem + 0.2vw, 0.78rem);
-      --fs-sm:   clamp(0.85rem, 0.82rem + 0.2vw, 0.95rem);
-      --fs-base: clamp(1rem, 0.96rem + 0.25vw, 1.08rem);
-      --fs-lg:   clamp(1.12rem, 1rem + 0.6vw, 1.4rem);
-      --fs-xl:   clamp(1.4rem, 1.15rem + 1.1vw, 1.9rem);
-      --fs-2xl:  clamp(1.9rem, 1.3rem + 2.4vw, 3.1rem);
-      --fs-3xl:  clamp(2.3rem, 1.2rem + 3.6vw, 4rem);
-      --fs-hero: clamp(2.7rem, 1rem + 6.4vw, 6rem);
-
-      /* Spacing (8pt) */
+      --purple:#7B47E0; --purple-mid:#6A34D6; --purple-deep:#4417AD;
+      --lav-100:#F5F2FB; --lav-200:#EDE3FB; --lav-300:#E4D6F7;
+      --purple-tint:rgba(123,71,224,0.08);
+      --text:#111827; --text-muted:#55607A; --text-faint:#9AA0AE;
+      --bg:#FBFAFE; --bg-cool:#F4F5FB; --surface:#FFFFFF;
+      --border:#ECE8F6; --border-2:#DED7EF;
+      --amber:#C9820F; --red:#C93A24; --green:#4E9A3E;
+      --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+      --fs-eyebrow:clamp(0.72rem,0.68rem + 0.2vw,0.78rem);
+      --fs-metric:clamp(1.9rem,1.4rem + 1.8vw,2.6rem);
+      --fs-sm:clamp(0.85rem,0.82rem + 0.2vw,0.95rem);
+      --fs-base:clamp(1rem,0.96rem + 0.25vw,1.08rem);
+      --fs-lg:clamp(1.12rem,1rem + 0.6vw,1.4rem);
+      --fs-xl:clamp(1.4rem,1.15rem + 1.1vw,1.9rem);
+      --fs-2xl:clamp(1.9rem,1.3rem + 2.4vw,3.1rem);
+      --fs-3xl:clamp(2.3rem,1.2rem + 3.6vw,4rem);
+      --fs-hero:clamp(2.5rem,1rem + 5.8vw,5.4rem);
       --s-1:.25rem;--s-2:.5rem;--s-3:.75rem;--s-4:1rem;--s-5:1.25rem;--s-6:1.5rem;
       --s-8:2rem;--s-10:2.5rem;--s-12:3rem;--s-16:4rem;--s-20:5rem;--s-24:6rem;
-
-      /* Radius */
       --r-xs:4px;--r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-pill:999px;
-
-      /* Shadow (soft, brand) */
-      --sh-xs: 0 1px 2px rgba(23,25,44,0.05);
-      --sh-sm: 0 2px 8px rgba(60,45,110,0.06);
-      --sh-md: 0 12px 32px rgba(60,45,110,0.10);
-      --sh-lg: 0 24px 60px rgba(60,45,110,0.16);
-      --glow:  0 12px 40px rgba(123,71,224,0.20);
-
-      --ease: cubic-bezier(0.16,1,0.3,1);
-      --t: 220ms var(--ease);
-      --w: 1120px; --w-wide: 1280px; --w-narrow: 760px;
-      --grad-hero: linear-gradient(150deg, #F7F3FD 0%, #EFE6FB 42%, #E7DAF7 78%, #F3ECFB 100%);
-      --grad-text: linear-gradient(115deg, #7B47E0 0%, #A671F0 55%, #4417AD 100%);
+      --sh-xs:0 1px 2px rgba(23,25,44,0.05);
+      --sh-sm:0 2px 8px rgba(60,45,110,0.06);
+      --sh-md:0 12px 32px rgba(60,45,110,0.10);
+      --sh-lg:0 24px 60px rgba(60,45,110,0.16);
+      --glow:0 12px 40px rgba(123,71,224,0.20);
+      --ease:cubic-bezier(0.16,1,0.3,1); --t:220ms var(--ease);
+      --w:1120px; --w-wide:1280px; --w-narrow:760px;
+      --grad-hero:linear-gradient(150deg,#F7F3FD 0%,#EFE6FB 42%,#E7DAF7 78%,#F3ECFB 100%);
+      --grad-text:linear-gradient(115deg,#7B47E0 0%,#A671F0 55%,#4417AD 100%);
     }
-
-    /* ===== reset ===== */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:88px}
     body{font-family:var(--font);font-size:var(--fs-base);line-height:1.65;color:var(--text);background:var(--bg);overflow-x:hidden;min-height:100dvh}
@@ -83,26 +56,21 @@
     p{text-wrap:pretty}
     :focus-visible{outline:2px solid var(--purple);outline-offset:3px;border-radius:var(--r-xs)}
     ::selection{background:var(--purple);color:#fff}
-    @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 
-    /* ===== helpers ===== */
     .container{max-width:var(--w);margin-inline:auto;padding-inline:var(--s-6)}
     .container--wide{max-width:var(--w-wide);margin-inline:auto;padding-inline:var(--s-6)}
     section{padding-block:clamp(var(--s-16),8vw,var(--s-24));position:relative}
     .grad-text{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .eyebrow{display:inline-flex;align-items:center;gap:var(--s-2);padding:6px 14px;border-radius:var(--r-pill);
-      background:var(--lav-100);border:1px solid var(--border-2);color:var(--purple-mid);
-      font-size:var(--fs-eyebrow);font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin-bottom:var(--s-5)}
+    .eyebrow{display:inline-flex;align-items:center;gap:var(--s-2);padding:6px 14px;border-radius:var(--r-pill);background:var(--lav-100);border:1px solid var(--border-2);color:var(--purple-mid);font-size:var(--fs-eyebrow);font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin-bottom:var(--s-5)}
     .eyebrow--danger{background:#FBEDEA;border-color:#F3D6CF;color:var(--red)}
     .eyebrow__dot{width:6px;height:6px;border-radius:50%;background:currentColor}
-    .sec-title{font-size:var(--fs-2xl);line-height:1.05;margin-bottom:var(--s-5);max-width:24ch}
-    .sec-sub{font-size:var(--fs-lg);color:var(--text-muted);max-width:60ch;line-height:1.55}
+    .sec-title{font-size:var(--fs-2xl);line-height:1.05;margin-bottom:var(--s-5);max-width:26ch}
+    .sec-sub{font-size:var(--fs-lg);color:var(--text-muted);max-width:62ch;line-height:1.55}
     .sec-sub strong{color:var(--text);font-weight:700}
+    .src{display:block;font-size:var(--fs-eyebrow);color:var(--text-faint);font-weight:700;margin-top:var(--s-2);letter-spacing:.02em}
 
-    /* ===== buttons ===== */
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s-2);padding:13px 26px;border-radius:var(--r-pill);
-      font-weight:800;font-size:var(--fs-sm);white-space:nowrap;
-      transition:transform 120ms var(--ease),box-shadow var(--t),background var(--t),border-color var(--t),color var(--t)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s-2);padding:13px 26px;border-radius:var(--r-pill);font-weight:800;font-size:var(--fs-sm);white-space:nowrap;transition:transform 120ms var(--ease),box-shadow var(--t),background var(--t),border-color var(--t),color var(--t)}
     .btn svg{transition:transform var(--t)}
     .btn:active{transform:scale(.97)}
     .btn--primary{background:var(--purple);color:#fff;box-shadow:0 8px 22px rgba(123,71,224,.28)}
@@ -112,20 +80,15 @@
     .btn--ghost:hover{background:var(--lav-100);border-color:var(--purple);transform:translateY(-2px)}
     .btn--lg{padding:16px 32px;font-size:var(--fs-base)}
 
-    /* ===== scroll progress ===== */
     .progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:200;background:linear-gradient(90deg,var(--purple),#A671F0);transition:width 80ms linear}
 
-    /* ===== top utility bar ===== */
     .topbar{background:linear-gradient(90deg,var(--purple-deep),var(--purple));color:#fff}
-    .topbar__in{max-width:var(--w-wide);margin-inline:auto;padding:8px var(--s-6);display:flex;align-items:center;justify-content:center;gap:var(--s-4);
-      font-size:var(--fs-eyebrow);font-weight:700;letter-spacing:.04em;text-transform:uppercase;flex-wrap:wrap}
-    .topbar__in span{display:inline-flex;align-items:center;gap:6px;opacity:.95}
+    .topbar__in{max-width:var(--w-wide);margin-inline:auto;padding:8px var(--s-6);display:flex;align-items:center;justify-content:center;gap:var(--s-4);font-size:var(--fs-eyebrow);font-weight:700;letter-spacing:.04em;text-transform:uppercase;flex-wrap:wrap}
+    .topbar__in span{display:inline-flex;align-items:center;gap:6px}
     .topbar__sep{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5)}
-    @media (max-width:600px){.topbar__in span:nth-child(n+5){display:none}}
+    @media (max-width:640px){.topbar__in span:nth-child(n+5){display:none}}
 
-    /* ===== nav ===== */
-    .nav{position:sticky;top:0;z-index:100;background:color-mix(in srgb,#fff 82%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-      border-bottom:1px solid transparent;transition:border-color var(--t),box-shadow var(--t)}
+    .nav{position:sticky;top:0;z-index:100;background:color-mix(in srgb,#fff 82%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:border-color var(--t),box-shadow var(--t)}
     .nav.scrolled{border-bottom-color:var(--border);box-shadow:var(--sh-xs)}
     .nav__in{max-width:var(--w-wide);margin-inline:auto;padding:12px var(--s-6);display:flex;align-items:center;justify-content:space-between;gap:var(--s-6)}
     .logo{display:inline-flex;align-items:center}
@@ -133,144 +96,163 @@
     .nav__links{display:flex;align-items:center;gap:var(--s-6)}
     .nav__links a{font-size:var(--fs-sm);font-weight:700;color:var(--text-muted);position:relative;transition:color var(--t)}
     .nav__links a::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--purple);border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform var(--t)}
-    .nav__links a:hover{color:var(--text)}
-    .nav__links a:hover::after{transform:scaleX(1)}
+    .nav__links a:hover{color:var(--text)}.nav__links a:hover::after{transform:scaleX(1)}
     .nav__actions{display:flex;align-items:center;gap:var(--s-3)}
     .burger{display:none;width:42px;height:42px;border-radius:var(--r-sm);color:var(--text);border:1px solid var(--border-2);place-items:center}
-    @media (max-width:900px){.nav__links{display:none}.burger{display:grid}.nav__cta-text{display:none}}
+    @media (max-width:960px){.nav__links{display:none}.burger{display:grid}.nav__cta-text{display:none}}
     .drawer{position:fixed;inset:0;z-index:99;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);padding:100px var(--s-6) var(--s-8);flex-direction:column;gap:var(--s-2);display:none}
     .drawer.open{display:flex}
     .drawer a{font-size:var(--fs-xl);font-weight:800;padding:var(--s-4) 0;border-bottom:1px solid var(--border)}
     .drawer a:last-child{color:var(--purple-mid)}
 
-    /* ===== atmosphere ===== */
     .orbs{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
     .orb{position:absolute;border-radius:50%;filter:blur(70px)}
     .orb--1{width:520px;height:520px;top:-160px;right:-120px;background:radial-gradient(circle,rgba(166,113,240,.5),transparent 70%);animation:drift 24s ease-in-out infinite}
     .orb--2{width:460px;height:460px;bottom:-180px;left:-100px;background:radial-gradient(circle,rgba(228,214,247,.85),transparent 70%);animation:drift 30s ease-in-out infinite reverse}
     @keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,40px) scale(1.08)}}
 
-    /* ===== HERO ===== */
     .hero{background:var(--grad-hero);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
-    .hero__in{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--s-16);align-items:center;
-      padding-block:clamp(var(--s-16),7vw,var(--s-24))}
-    .hero__badge{display:inline-flex;align-items:center;gap:var(--s-2);padding:7px 15px;border-radius:var(--r-pill);
-      background:rgba(255,255,255,.7);border:1px solid var(--border-2);font-size:var(--fs-eyebrow);font-weight:800;
-      color:var(--purple-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--s-6);box-shadow:var(--sh-xs)}
+    .hero__in{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--s-16);align-items:center;padding-block:clamp(var(--s-16),6vw,var(--s-20))}
+    .hero__badge{display:inline-flex;align-items:center;gap:var(--s-2);padding:7px 15px;border-radius:var(--r-pill);background:rgba(255,255,255,.7);border:1px solid var(--border-2);font-size:var(--fs-eyebrow);font-weight:800;color:var(--purple-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--s-6);box-shadow:var(--sh-xs)}
     .hero__badge .pulse{width:7px;height:7px;border-radius:50%;background:var(--purple);box-shadow:0 0 0 0 rgba(123,71,224,.35);animation:pulse 2.4s infinite}
     @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(123,71,224,.35)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
-    .hero__title{font-size:var(--fs-hero);font-weight:900;line-height:.92;letter-spacing:-0.045em;margin-bottom:var(--s-6)}
-    .hero__sub{font-size:var(--fs-lg);color:var(--text-muted);max-width:52ch;line-height:1.5;margin-bottom:var(--s-8)}
+    .hero__title{font-size:var(--fs-hero);font-weight:900;line-height:.94;letter-spacing:-0.045em;margin-bottom:var(--s-6)}
+    .hero__sub{font-size:var(--fs-lg);color:var(--text-muted);max-width:56ch;line-height:1.5;margin-bottom:var(--s-8)}
     .hero__sub strong{color:var(--text);font-weight:700}
     .hero__cta{display:flex;flex-wrap:wrap;gap:var(--s-4)}
-
-    /* hero snapshot card */
-    .snapshot{background:rgba(255,255,255,.78);backdrop-filter:blur(6px);border:1px solid #fff;border-radius:var(--r-xl);
-      padding:var(--s-8);box-shadow:var(--sh-lg)}
+    .snapshot{background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border:1px solid #fff;border-radius:var(--r-xl);padding:var(--s-8);box-shadow:var(--sh-lg)}
     .snapshot__kicker{font-size:var(--fs-eyebrow);font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--purple-mid);margin-bottom:var(--s-5)}
     .snapshot__row{display:flex;align-items:center;gap:var(--s-4);padding:var(--s-4) 0;border-top:1px solid var(--border)}
     .snapshot__row:first-of-type{border-top:none;padding-top:0}
     .snapshot__ic{width:40px;height:40px;border-radius:var(--r-md);background:var(--lav-100);color:var(--purple);display:grid;place-items:center;flex-shrink:0;border:1px solid var(--border-2)}
     .snapshot__k{font-size:var(--fs-eyebrow);color:var(--text-faint);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
-    .snapshot__v{font-size:var(--fs-base);font-weight:800;color:var(--text)}
-    .snapshot__cta{margin-top:var(--s-6)}
-    .snapshot__cta .btn{width:100%}
-    @media (max-width:900px){.hero__in{grid-template-columns:1fr;gap:var(--s-12)}}
+    .snapshot__v{font-size:var(--fs-base);font-weight:800}
+    .countdown{display:flex;gap:var(--s-2);margin:var(--s-6) 0 var(--s-2)}
+    .cd-unit{flex:1;text-align:center;background:var(--lav-100);border:1px solid var(--border-2);border-radius:var(--r-sm);padding:var(--s-3) var(--s-2)}
+    .cd-num{font-size:1.5rem;font-weight:900;letter-spacing:-0.04em;color:var(--purple-deep);line-height:1;font-variant-numeric:tabular-nums}
+    .cd-lbl{font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);margin-top:4px}
+    .snapshot__cta{margin-top:var(--s-5)}.snapshot__cta .btn{width:100%}
+    .snapshot__seats{text-align:center;font-size:var(--fs-eyebrow);color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-top:var(--s-4)}
+    @media (max-width:960px){.hero__in{grid-template-columns:1fr;gap:var(--s-12)}}
 
-    /* ===== STAT BAND ===== */
-    .statband{background:var(--text);color:#fff;position:relative;overflow:hidden}
-    .statband::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 100% at 15% 0%,rgba(123,71,224,.35),transparent 60%),radial-gradient(ellipse 50% 100% at 90% 100%,rgba(68,23,173,.4),transparent 60%)}
-    .statband__in{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s-6)}
-    .statband__lead{grid-column:1/-1;max-width:60ch;margin-bottom:var(--s-8)}
-    .statband__lead .eyebrow{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18);color:#D9C9FF}
-    .statband__lead h2{font-size:var(--fs-xl);color:#fff;font-weight:800;letter-spacing:-0.02em}
-    .stat__num{font-size:clamp(2.4rem,1.6rem+2.4vw,3.4rem);font-weight:900;line-height:1;letter-spacing:-0.04em;margin-bottom:var(--s-3)}
-    .stat__num.p{color:#C4A6FF}.stat__num.a{color:#F5C878}.stat__num.r{color:#F79B87}
-    .stat__label{font-size:var(--fs-sm);color:rgba(255,255,255,.72);line-height:1.45}
-    .stat{padding-top:var(--s-5);border-top:2px solid rgba(255,255,255,.14)}
-    @media (max-width:820px){.statband__in{grid-template-columns:repeat(2,1fr);gap:var(--s-8) var(--s-6)}}
-    @media (max-width:440px){.statband__in{grid-template-columns:1fr}}
+    /* recognition (authority + logos) */
+    .reco{background:var(--surface);border-bottom:1px solid var(--border)}
+    .reco__in{padding-block:var(--s-16)}
+    .reco__headline{text-align:center;font-size:var(--fs-xl);font-weight:800;letter-spacing:-0.02em;max-width:26ch;margin:0 auto var(--s-3)}
+    .reco__sub{text-align:center;font-size:var(--fs-eyebrow);font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--purple-mid);margin-bottom:var(--s-10)}
+    .reco__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s-4)}
+    .reco__item{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:var(--s-3);text-align:center;padding:var(--s-6) var(--s-4);border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);box-shadow:var(--sh-xs);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+    .reco__item:hover{transform:translateY(-3px);box-shadow:var(--sh-sm);border-color:var(--border-2)}
+    .reco__logo{height:48px;display:flex;align-items:center;justify-content:center}
+    .reco__logo img{max-height:48px;max-width:150px;width:auto;object-fit:contain}
+    .reco__cap{font-size:var(--fs-eyebrow);color:var(--text-muted);line-height:1.4;font-weight:700}
+    @media (max-width:820px){.reco__grid{grid-template-columns:repeat(2,1fr)}}
 
-    /* ===== PROBLEM ===== */
+    /* framework (LIGHT) */
+    .framework{background:linear-gradient(165deg,var(--lav-100) 0%,#fff 55%,var(--lav-200) 100%);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+    .framework__in{position:relative}
+    .framework h2{font-size:var(--fs-2xl);line-height:1.05;margin-bottom:var(--s-3);max-width:26ch}
+    .framework__lead{color:var(--text-muted);font-size:var(--fs-lg);max-width:60ch;line-height:1.55;margin-bottom:var(--s-12)}
+    .framework__lead strong{color:var(--text);font-weight:700}
+    .spots{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s-4)}
+    .spot{text-align:center;padding:var(--s-6) var(--s-4);border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-sm);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+    .spot:hover{transform:translateY(-5px);box-shadow:var(--glow);border-color:var(--purple)}
+    .spot__ic{width:52px;height:52px;margin:0 auto var(--s-4);border-radius:var(--r-md);display:grid;place-items:center;background:var(--lav-100);color:var(--purple);border:1px solid var(--border-2)}
+    .spot__n{font-size:var(--fs-eyebrow);font-weight:800;color:var(--purple-mid);letter-spacing:.1em;margin-bottom:var(--s-2)}
+    .spot__t{font-size:var(--fs-base);font-weight:800;line-height:1.25}
+    @media (max-width:900px){.spots{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:480px){.spots{grid-template-columns:1fr}}
+
+    /* evidence stat band (light) */
+    .statband{background:var(--bg-cool);border-bottom:1px solid var(--border)}
+    .statband__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s-6);margin-top:var(--s-10)}
+    .stat{padding-top:var(--s-5);border-top:2px solid var(--border-2)}
+    .stat__num{font-size:var(--fs-metric);font-weight:900;line-height:1;letter-spacing:-0.04em;margin-bottom:var(--s-2);font-variant-numeric:tabular-nums;color:var(--purple)}
+    .stat__label{font-size:var(--fs-sm);color:var(--text-muted);line-height:1.45}
+    @media (max-width:820px){.statband__grid{grid-template-columns:repeat(2,1fr);gap:var(--s-8) var(--s-6)}}
+    @media (max-width:440px){.statband__grid{grid-template-columns:1fr}}
+
+    /* problem */
     .problem__grid{display:grid;grid-template-columns:1fr .92fr;gap:var(--s-16);align-items:center}
     .problem__body{color:var(--text-muted);line-height:1.75;margin-bottom:var(--s-5)}
     .problem__body strong{color:var(--text);font-weight:700}
+    .problem__pov{margin-top:var(--s-6);padding:var(--s-5) var(--s-6);border-left:4px solid var(--purple);background:var(--lav-100);border-radius:0 var(--r-md) var(--r-md) 0;font-size:var(--fs-base);font-weight:800;color:var(--text);line-height:1.4}
     .dcards{display:flex;flex-direction:column;gap:var(--s-4)}
-    .dcard{display:flex;gap:var(--s-5);align-items:flex-start;padding:var(--s-6);border-radius:var(--r-lg);background:var(--surface);
-      border:1px solid var(--border);box-shadow:var(--sh-sm);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+    .dcard{display:flex;gap:var(--s-5);align-items:flex-start;padding:var(--s-6);border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-sm);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
     .dcard:hover{transform:translateX(5px);box-shadow:var(--sh-md);border-color:var(--border-2)}
-    .dcard__num{font-size:clamp(1.7rem,1.3rem+1.4vw,2.3rem);font-weight:900;letter-spacing:-0.04em;line-height:1;flex-shrink:0;min-width:96px}
-    .dcard__num.p{color:var(--purple)}.dcard__num.a{color:var(--amber)}.dcard__num.r{color:var(--red)}
+    .dcard__num{font-size:var(--fs-metric);font-weight:900;letter-spacing:-0.04em;line-height:1;flex-shrink:0;min-width:92px;font-variant-numeric:tabular-nums;color:var(--purple)}
     .dcard__text{font-size:var(--fs-sm);color:var(--text-muted);line-height:1.55}
     .dcard__text strong{color:var(--text);font-weight:700}
     @media (max-width:900px){.problem__grid{grid-template-columns:1fr;gap:var(--s-10)}}
 
-    /* ===== WHY 2026 (pillars) ===== */
     .why2026{background:var(--bg-cool);border-block:1px solid var(--border)}
     .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-5);margin-top:var(--s-12)}
-    .pillar{position:relative;padding:var(--s-8) var(--s-6) var(--s-6);border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);
-      box-shadow:var(--sh-sm);overflow:hidden;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+    .pillar{position:relative;padding:var(--s-8) var(--s-6) var(--s-6);border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-sm);overflow:hidden;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
     .pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--purple),#A671F0);transform:scaleX(0);transform-origin:left;transition:transform var(--t)}
-    .pillar:hover{transform:translateY(-5px);box-shadow:var(--glow);border-color:var(--border-2)}
-    .pillar:hover::before{transform:scaleX(1)}
-    .pillar__ic{width:48px;height:48px;border-radius:var(--r-md);display:grid;place-items:center;margin-bottom:var(--s-5);
-      background:var(--lav-100);color:var(--purple);border:1px solid var(--border-2)}
+    .pillar:hover{transform:translateY(-5px);box-shadow:var(--glow);border-color:var(--border-2)}.pillar:hover::before{transform:scaleX(1)}
+    .pillar__ic{width:48px;height:48px;border-radius:var(--r-md);display:grid;place-items:center;margin-bottom:var(--s-5);background:var(--lav-100);color:var(--purple);border:1px solid var(--border-2)}
     .pillar__title{font-size:var(--fs-lg);font-weight:800;margin-bottom:var(--s-3)}
     .pillar__body{font-size:var(--fs-sm);color:var(--text-muted);line-height:1.6}
+    .pov-line{margin-top:var(--s-12);text-align:center;font-size:var(--fs-xl);font-weight:800;letter-spacing:-0.02em;max-width:32ch;margin-inline:auto;line-height:1.25}
     @media (max-width:900px){.pillars{grid-template-columns:1fr}}
     @media (min-width:901px) and (max-width:1080px){.pillars{grid-template-columns:repeat(2,1fr)}}
 
-    /* ===== BLINDSPOTS (interactive tabs) ===== */
-    .bs-intro{max-width:60ch;margin-bottom:var(--s-12)}
+    .bs-intro{max-width:62ch;margin-bottom:var(--s-12)}
     .bs-intro p{color:var(--text-muted);font-size:var(--fs-base);line-height:1.7;margin-top:var(--s-5)}
     .bs-show{display:grid;grid-template-columns:400px 1fr;gap:var(--s-8);align-items:start}
     .bs-tabs{display:flex;flex-direction:column;gap:var(--s-3)}
-    .bs-tab{position:relative;text-align:left;display:grid;grid-template-columns:auto 1fr;gap:var(--s-4);align-items:center;
-      padding:var(--s-5);border-radius:var(--r-md);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-xs);
-      transition:border-color var(--t),box-shadow var(--t),transform var(--t),background var(--t)}
+    .bs-tab{position:relative;text-align:left;display:grid;grid-template-columns:auto 1fr;gap:var(--s-4);align-items:center;padding:var(--s-5);border-radius:var(--r-md);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-xs);transition:border-color var(--t),box-shadow var(--t),transform var(--t),background var(--t)}
     .bs-tab:hover{border-color:var(--border-2);transform:translateX(3px)}
     .bs-tab[aria-selected="true"]{background:linear-gradient(120deg,#fff,var(--lav-100));border-color:var(--purple);box-shadow:var(--glow)}
     .bs-tab__n{font-size:1.3rem;font-weight:900;letter-spacing:-0.04em;color:var(--text-faint);transition:color var(--t)}
     .bs-tab[aria-selected="true"] .bs-tab__n{color:var(--purple)}
-    .bs-tab__t{font-size:var(--fs-base);font-weight:800;line-height:1.2;color:var(--text)}
-    .bs-tab__h{font-size:var(--fs-eyebrow);color:var(--text-muted);font-weight:600;margin-top:3px;line-height:1.3}
-    .bs-panel-wrap{position:relative;min-height:460px}
-    .bs-panel{position:absolute;inset:0;padding:var(--s-10);border-radius:var(--r-xl);background:var(--surface);border:1px solid var(--border);
-      box-shadow:var(--sh-md);opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s;overflow:hidden}
+    .bs-tab__t{font-size:var(--fs-base);font-weight:800;line-height:1.2}
+    .bs-tab__h{font-size:var(--fs-eyebrow);color:var(--text-muted);font-weight:700;margin-top:3px;line-height:1.3}
+    .bs-panel-wrap{position:relative;min-height:490px}
+    .bs-panel{position:absolute;inset:0;padding:var(--s-10);border-radius:var(--r-xl);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-md);opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s;overflow:hidden}
     .bs-panel.active{opacity:1;visibility:visible;transform:none;position:relative}
     .bs-panel::after{content:attr(data-idx);position:absolute;top:var(--s-6);right:var(--s-8);font-size:2rem;font-weight:900;color:var(--lav-200);letter-spacing:-0.05em}
-    .bs-panel__kicker{font-size:var(--fs-eyebrow);font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--text-faint);margin-bottom:var(--s-2)}
+    .bs-panel__tag{display:inline-block;font-size:var(--fs-eyebrow);font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--purple-mid);background:var(--lav-100);border:1px solid var(--border-2);padding:4px 12px;border-radius:var(--r-pill);margin-bottom:var(--s-4)}
     .bs-panel__title{font-size:var(--fs-xl);font-weight:800;margin-bottom:var(--s-4);max-width:22ch}
-    .bs-panel__hook{display:inline-block;font-size:var(--fs-sm);font-weight:800;padding:6px 14px;border-radius:var(--r-pill);margin-bottom:var(--s-5)}
-    .bs-panel__hook.p{background:var(--lav-100);color:var(--purple-mid)}
-    .bs-panel__hook.a{background:#FBF1DE;color:var(--amber)}
-    .bs-panel__hook.r{background:#FBEDEA;color:var(--red)}
+    .bs-panel__hook{font-size:var(--fs-base);font-weight:800;margin-bottom:var(--s-2);line-height:1.4;color:var(--purple-mid)}
+    .bs-panel__src{font-size:var(--fs-eyebrow);color:var(--text-faint);font-weight:700;margin-bottom:var(--s-5)}
     .bs-panel__desc{font-size:var(--fs-sm);color:var(--text-muted);line-height:1.75;margin-bottom:var(--s-6);max-width:64ch}
     .bs-panel__points{display:grid;gap:var(--s-3)}
     .bs-panel__points li{display:flex;gap:var(--s-3);align-items:flex-start;font-size:var(--fs-sm);color:var(--text)}
     .bs-panel__points svg{color:var(--purple);flex-shrink:0;margin-top:3px}
-    @media (max-width:900px){
-      .bs-show{grid-template-columns:1fr;gap:var(--s-4)}
-      .bs-panel-wrap{min-height:0;margin-top:var(--s-2)}
-      .bs-tab__h{display:none}
-      .bs-panel{padding:var(--s-6)}
-    }
+    @media (max-width:900px){.bs-show{grid-template-columns:1fr;gap:var(--s-4)}.bs-panel-wrap{min-height:0}.bs-tab__h{display:none}.bs-panel{padding:var(--s-6)}}
 
-    /* ===== SPEAKERS ===== */
+    .agenda{background:var(--bg-cool);border-block:1px solid var(--border)}
+    .agenda__note{font-size:var(--fs-sm);color:var(--text-muted);margin-top:var(--s-3)}
+    .timeline{max-width:840px;margin:var(--s-12) auto 0;position:relative}
+    .tl-row{display:grid;grid-template-columns:120px 1fr;gap:var(--s-6);padding:var(--s-5) 0;border-top:1px solid var(--border);align-items:baseline}
+    .tl-row:first-child{border-top:none}
+    .tl-time{font-size:var(--fs-sm);font-weight:900;color:var(--purple-mid);font-variant-numeric:tabular-nums;white-space:nowrap}
+    .tl-title{font-size:var(--fs-base);font-weight:800}
+    .tl-desc{font-size:var(--fs-sm);color:var(--text-muted);margin-top:2px}
+    .tl-row.break .tl-title{color:var(--text-muted);font-weight:700}
+    @media (max-width:560px){.tl-row{grid-template-columns:1fr;gap:var(--s-1)}}
+
+    .audience__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s-4);margin-top:var(--s-10)}
+    .aud{display:flex;align-items:center;gap:var(--s-3);padding:var(--s-5);border-radius:var(--r-md);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-xs);font-weight:800;font-size:var(--fs-sm);transition:transform var(--t),border-color var(--t),box-shadow var(--t)}
+    .aud:hover{transform:translateY(-3px);border-color:var(--purple);box-shadow:var(--sh-sm)}
+    .aud__ic{width:34px;height:34px;border-radius:var(--r-sm);background:var(--lav-100);color:var(--purple);display:grid;place-items:center;flex-shrink:0;border:1px solid var(--border-2)}
+    @media (max-width:900px){.audience__grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:440px){.audience__grid{grid-template-columns:1fr}}
+
     .speakers{background:var(--bg-cool);border-block:1px solid var(--border)}
     .sp-head{display:grid;grid-template-columns:1fr .8fr;gap:var(--s-12);align-items:end;margin-bottom:var(--s-12)}
     .sp-head p{color:var(--text-muted);font-size:var(--fs-base);line-height:1.7}
     .sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-6)}
-    .sp{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--sh-sm);overflow:hidden;
-      transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+    .sp{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--sh-sm);overflow:hidden;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
     .sp:hover{transform:translateY(-6px);box-shadow:var(--glow);border-color:var(--border-2)}
     .sp__photo{position:relative;aspect-ratio:4/3;background:linear-gradient(150deg,var(--lav-200),var(--lav-300));display:grid;place-items:center;overflow:hidden}
     .sp__initials{font-size:2.6rem;font-weight:900;letter-spacing:-0.03em;color:var(--purple);opacity:.85}
     .sp__photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
     .sp__body{padding:var(--s-6)}
     .sp__name{font-size:var(--fs-lg);font-weight:800;margin-bottom:var(--s-2)}
-    .sp__role{font-size:var(--fs-sm);font-weight:700;color:var(--purple-mid);line-height:1.4;margin-bottom:var(--s-2)}
-    .sp__cred{font-size:var(--fs-eyebrow);color:var(--text-muted);line-height:1.5}
+    .sp__role{font-size:var(--fs-sm);font-weight:700;color:var(--purple-mid);line-height:1.4;margin-bottom:var(--s-3)}
+    .sp__ach{font-size:var(--fs-eyebrow);color:var(--text-muted);line-height:1.5}
     .sp--more{border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:var(--s-4);padding:var(--s-10) var(--s-6);background:transparent;box-shadow:none}
     .sp--more:hover{transform:none;box-shadow:none;border-color:var(--purple)}
     .sp--more .plus{width:56px;height:56px;border-radius:50%;border:1.5px dashed var(--border-2);display:grid;place-items:center;color:var(--purple);font-size:1.6rem}
@@ -278,35 +260,29 @@
     @media (max-width:900px){.sp-head{grid-template-columns:1fr;gap:var(--s-6)}.sp-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:560px){.sp-grid{grid-template-columns:1fr}}
 
-    /* ===== TAKEAWAYS ===== */
     .tk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-6);margin-top:var(--s-12)}
-    .tk{position:relative;padding:var(--s-8) var(--s-6);border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);
-      box-shadow:var(--sh-sm);overflow:hidden;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+    .tk{position:relative;padding:var(--s-8) var(--s-6);border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-sm);overflow:hidden;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
     .tk:hover{transform:translateY(-5px);box-shadow:var(--glow);border-color:var(--border-2)}
     .tk__num{position:absolute;top:var(--s-5);right:var(--s-6);font-size:2.4rem;font-weight:900;letter-spacing:-0.06em;color:var(--lav-200);line-height:1}
     .tk__ic{width:46px;height:46px;border-radius:var(--r-md);display:grid;place-items:center;margin-bottom:var(--s-5);background:var(--lav-100);color:var(--purple);border:1px solid var(--border-2)}
-    .tk__title{font-size:var(--fs-lg);font-weight:800;margin-bottom:var(--s-3);line-height:1.25;max-width:20ch}
+    .tk__title{font-size:var(--fs-lg);font-weight:800;margin-bottom:var(--s-3);line-height:1.25;max-width:22ch}
     .tk__desc{font-size:var(--fs-sm);color:var(--text-muted);line-height:1.6}
     @media (max-width:900px){.tk-grid{grid-template-columns:1fr}}
     @media (min-width:901px) and (max-width:1080px){.tk-grid{grid-template-columns:repeat(2,1fr)}}
 
-    /* ===== WHY MISS ===== */
-    .whymiss{background:var(--bg-cool);border-block:1px solid var(--border)}
-    .whymiss__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--s-16);align-items:center;margin-top:var(--s-10)}
-    .whymiss__lead{color:var(--text-muted);font-size:var(--fs-base);line-height:1.75;margin-bottom:var(--s-8)}
-    .whymiss__list{display:flex;flex-direction:column;gap:var(--s-6)}
-    .whymiss__list li{display:flex;gap:var(--s-4);align-items:flex-start}
-    .whymiss__ic{width:38px;height:38px;border-radius:var(--r-md);background:var(--surface);color:var(--purple);display:grid;place-items:center;flex-shrink:0;border:1px solid var(--border-2);box-shadow:var(--sh-xs)}
-    .whymiss__list strong{display:block;font-weight:800;margin-bottom:4px}
-    .whymiss__list span{font-size:var(--fs-sm);color:var(--text-muted);line-height:1.55}
-    .quote{position:relative;padding:var(--s-10) var(--s-8);border-radius:var(--r-xl);background:linear-gradient(155deg,#fff,var(--lav-100));
-      border:1px solid var(--border-2);border-left:4px solid var(--purple);box-shadow:var(--sh-md)}
+    .whyjoin{background:var(--bg-cool);border-block:1px solid var(--border)}
+    .whyjoin__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--s-16);align-items:center;margin-top:var(--s-10)}
+    .whyjoin__list{display:flex;flex-direction:column;gap:var(--s-6)}
+    .whyjoin__list li{display:flex;gap:var(--s-4);align-items:flex-start}
+    .whyjoin__ic{width:38px;height:38px;border-radius:var(--r-md);background:var(--surface);color:var(--purple);display:grid;place-items:center;flex-shrink:0;border:1px solid var(--border-2);box-shadow:var(--sh-xs)}
+    .whyjoin__list strong{display:block;font-weight:800;margin-bottom:4px}
+    .whyjoin__list span{font-size:var(--fs-sm);color:var(--text-muted);line-height:1.55}
+    .quote{position:relative;padding:var(--s-10) var(--s-8);border-radius:var(--r-xl);background:linear-gradient(155deg,#fff,var(--lav-100));border:1px solid var(--border-2);border-left:4px solid var(--purple);box-shadow:var(--sh-md)}
     .quote::before{content:'\201C';position:absolute;top:-6px;left:var(--s-6);font-size:5.5rem;line-height:1;color:var(--lav-300);font-family:Georgia,serif}
     .quote__text{font-size:var(--fs-lg);font-weight:700;line-height:1.5;margin-bottom:var(--s-5);position:relative}
     .quote__attr{font-size:var(--fs-sm);color:var(--text-muted);font-weight:700}
-    @media (max-width:900px){.whymiss__grid{grid-template-columns:1fr;gap:var(--s-10)}}
+    @media (max-width:900px){.whyjoin__grid{grid-template-columns:1fr;gap:var(--s-10)}}
 
-    /* ===== FAQ ===== */
     .faq__list{max-width:var(--w-narrow);margin:var(--s-12) auto 0;display:flex;flex-direction:column;gap:var(--s-3)}
     .faq-item{border-radius:var(--r-md);background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-xs);overflow:hidden;transition:border-color var(--t),box-shadow var(--t)}
     .faq-item.open{border-color:var(--purple);box-shadow:var(--sh-sm)}
@@ -315,15 +291,14 @@
     .faq-item__ic{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--border-2);display:grid;place-items:center;flex-shrink:0;color:var(--text-muted);font-size:1.1rem;transition:transform var(--t),color var(--t),border-color var(--t)}
     .faq-item.open .faq-item__ic{transform:rotate(45deg);color:var(--purple);border-color:var(--purple)}
     .faq-item__a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
-    .faq-item.open .faq-item__a{max-height:340px}
+    .faq-item.open .faq-item__a{max-height:360px}
     .faq-item__a p{padding:0 var(--s-6) var(--s-5);font-size:var(--fs-sm);color:var(--text-muted);line-height:1.7}
 
-    /* ===== REGISTER ===== */
     .register{background:var(--grad-hero);border-top:1px solid var(--border);position:relative;overflow:hidden}
     .register__in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:var(--s-12);align-items:center}
     .register__body{color:var(--text-muted);line-height:1.7;margin-bottom:var(--s-8);max-width:46ch}
     .register__perks{display:flex;flex-direction:column;gap:var(--s-3)}
-    .register__perks li{display:flex;align-items:center;gap:var(--s-3);font-size:var(--fs-sm);font-weight:700;color:var(--text)}
+    .register__perks li{display:flex;align-items:center;gap:var(--s-3);font-size:var(--fs-sm);font-weight:700}
     .register__perks .check{width:22px;height:22px;border-radius:50%;background:var(--purple);color:#fff;display:grid;place-items:center;flex-shrink:0}
     .form-card{background:#fff;border-radius:var(--r-lg);padding:var(--s-8);box-shadow:var(--sh-lg);border:1px solid var(--border)}
     .form-card__title{font-size:var(--fs-xl);font-weight:800;margin-bottom:var(--s-2)}
@@ -339,13 +314,21 @@
     .form-trust svg{color:var(--purple)}
     @media (max-width:900px){.register__in{grid-template-columns:1fr;gap:var(--s-10)}}
 
-    /* ===== FOOTER ===== */
-    .footer{padding-block:var(--s-10);border-top:1px solid var(--border);background:var(--surface)}
-    .footer__in{display:flex;align-items:center;justify-content:space-between;gap:var(--s-6);flex-wrap:wrap}
-    .footer__in svg{height:30px;width:auto}
-    .footer__note{font-size:var(--fs-eyebrow);color:var(--text-faint);text-align:right}
+    .sources{background:var(--surface);border-top:1px solid var(--border)}
+    .sources h2{font-size:var(--fs-lg);margin-bottom:var(--s-5)}
+    .sources ol{max-width:var(--w-narrow);margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:var(--s-2)}
+    .sources li{font-size:var(--fs-eyebrow);color:var(--text-muted);line-height:1.5}
+    .sources a{color:var(--purple-mid);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+    .sources__note{font-size:var(--fs-eyebrow);color:var(--text-faint);margin-top:var(--s-5);max-width:var(--w-narrow)}
 
-    /* ===== reveal ===== */
+    .footer{padding-block:var(--s-12);border-top:1px solid var(--border);background:var(--surface)}
+    .footer__in{display:grid;grid-template-columns:1fr auto;gap:var(--s-8);align-items:center}
+    .footer__in svg{height:32px;width:auto}
+    .footer__hosts{font-size:var(--fs-eyebrow);color:var(--text-muted);margin-top:var(--s-3)}
+    .footer__hosts strong{color:var(--text);font-weight:800}
+    .footer__note{font-size:var(--fs-eyebrow);color:var(--text-faint);text-align:right;line-height:1.6}
+    @media (max-width:640px){.footer__in{grid-template-columns:1fr;gap:var(--s-5)}.footer__note{text-align:left}}
+
     .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
     .reveal.in{opacity:1;transform:none}
     .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
@@ -353,7 +336,7 @@
 </head>
 <body>
 
-<!-- CloudNuro logo (approved Purple lockup) as reusable symbol -->
+<!-- CloudNuro logo (approved Purple lockup) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="cn-logo" viewBox="98 303 807 400">
     <defs>
@@ -381,41 +364,37 @@
 
 <div class="progress" id="progress" aria-hidden="true"></div>
 
-<!-- TOP UTILITY BAR -->
 <div class="topbar">
   <div class="topbar__in">
-    <span>Executive Leadership Summit</span><i class="topbar__sep"></i>
+    <span>Flagship AI Summit 2026 &middot; Chicago Edition</span><i class="topbar__sep"></i>
     <span>13 August 2026</span><i class="topbar__sep"></i>
-    <span>Virtual &middot; Global</span><i class="topbar__sep"></i>
-    <span>Free to Attend</span>
+    <span>11:00 AM&ndash;3:00 PM EST</span><i class="topbar__sep"></i>
+    <span>Virtual &middot; Free</span>
   </div>
 </div>
 
-<!-- NAV -->
 <nav class="nav" id="nav" aria-label="Primary">
   <div class="nav__in">
     <a href="#hero" class="logo" aria-label="CloudNuro home"><svg role="img" aria-label="CloudNuro"><use href="#cn-logo"/></svg></a>
     <div class="nav__links">
-      <a href="#what-we-cover">What We Cover</a>
+      <a href="#framework">The Framework</a>
+      <a href="#agenda">Agenda</a>
       <a href="#council">Council</a>
-      <a href="#takeaways">Takeaways</a>
       <a href="#faq">FAQs</a>
     </div>
     <div class="nav__actions">
-      <a href="#register" class="btn btn--primary"><span class="nav__cta-text">Register&nbsp;</span>Free</a>
-      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+      <a href="#register" class="btn btn--primary"><span class="nav__cta-text">Reserve My&nbsp;</span>Seat</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
     </div>
   </div>
 </nav>
 
 <div class="drawer" id="drawer" aria-hidden="true">
-  <a href="#what-we-cover" data-close>What We Cover</a>
+  <a href="#framework" data-close>The Framework</a>
+  <a href="#agenda" data-close>Agenda</a>
   <a href="#council" data-close>Council</a>
-  <a href="#takeaways" data-close>Takeaways</a>
   <a href="#faq" data-close>FAQs</a>
-  <a href="#register" data-close>Register Free &#8594;</a>
+  <a href="#register" data-close>Reserve My Seat &#8594;</a>
 </div>
 
 <!-- HERO -->
@@ -423,49 +402,76 @@
   <div class="orbs" aria-hidden="true"><span class="orb orb--1"></span><span class="orb orb--2"></span></div>
   <div class="container--wide hero__in">
     <div>
-      <div class="hero__badge reveal in"><span class="pulse"></span>CloudNuro Presents &middot; Executive Leadership Summit</div>
-      <h1 class="hero__title reveal in">Blindspots of<br><span class="grad-text">AI Adoption</span></h1>
-      <p class="hero__sub reveal in">Your enterprise is spending on AI. Your dashboards look impressive. But <strong>something isn&#8217;t compounding.</strong> Five panels. Five structural blindspots. One afternoon that exposes what no one in your leadership meeting is saying out loud.</p>
+      <div class="hero__badge reveal in"><span class="pulse"></span>Flagship AI Summit 2026 &middot; Chicago Edition</div>
+      <h1 class="hero__title reveal in">The Blindspots of<br><span class="grad-text">AI Adoption</span></h1>
+      <p class="hero__sub reveal in"><strong>AI is no longer an innovation challenge. It is a governance challenge.</strong> As enterprises deploy hundreds of models, copilots, agents, and SaaS applications, the question is no longer whether AI delivers value &#8212; but whether you can govern it responsibly, securely, and profitably. This executive summit examines the operating principles that separate real transformation from expensive experimentation.</p>
       <div class="hero__cta reveal in">
-        <a href="#register" class="btn btn--primary btn--lg">Reserve My Seat Free
+        <a href="#register" class="btn btn--primary btn--lg">Reserve My Executive Seat
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        <a href="#what-we-cover" class="btn btn--ghost btn--lg">Explore the Blindspots</a>
+        <a href="#agenda" class="btn btn--ghost btn--lg">View the Agenda</a>
       </div>
     </div>
     <aside class="snapshot reveal in d1" aria-label="Summit details">
       <p class="snapshot__kicker">The Summit at a Glance</p>
-      <div class="snapshot__row">
-        <span class="snapshot__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
-        <div><div class="snapshot__k">Date</div><div class="snapshot__v">13 August 2026</div></div>
+      <div class="snapshot__row"><span class="snapshot__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><div><div class="snapshot__k">Date</div><div class="snapshot__v">Thursday, 13 August 2026</div></div></div>
+      <div class="snapshot__row"><span class="snapshot__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><div><div class="snapshot__k">Time</div><div class="snapshot__v">11:00 AM &ndash; 3:00 PM EST</div></div></div>
+      <div class="snapshot__row"><span class="snapshot__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><div><div class="snapshot__k">Format</div><div class="snapshot__v">Virtual &middot; Panel-Led &middot; Free</div></div></div>
+      <div class="countdown" id="countdown" aria-label="Time until the summit">
+        <div class="cd-unit"><div class="cd-num" id="cd-d">--</div><div class="cd-lbl">Days</div></div>
+        <div class="cd-unit"><div class="cd-num" id="cd-h">--</div><div class="cd-lbl">Hrs</div></div>
+        <div class="cd-unit"><div class="cd-num" id="cd-m">--</div><div class="cd-lbl">Min</div></div>
+        <div class="cd-unit"><div class="cd-num" id="cd-s">--</div><div class="cd-lbl">Sec</div></div>
       </div>
-      <div class="snapshot__row">
-        <span class="snapshot__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
-        <div><div class="snapshot__k">Format</div><div class="snapshot__v">Virtual &middot; Global</div></div>
-      </div>
-      <div class="snapshot__row">
-        <span class="snapshot__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-        <div><div class="snapshot__k">Admission</div><div class="snapshot__v">Free to Attend</div></div>
-      </div>
-      <div class="snapshot__row">
-        <span class="snapshot__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-        <div><div class="snapshot__k">Agenda</div><div class="snapshot__v">One Afternoon &middot; Five Blindspots</div></div>
-      </div>
-      <div class="snapshot__cta"><a href="#register" class="btn btn--primary">Register Now</a></div>
+      <p class="snapshot__seats">&#9679; Seats are limited</p>
     </aside>
   </div>
 </header>
 
-<!-- STAT BAND -->
-<section class="statband">
-  <div class="container--wide statband__in">
-    <div class="statband__lead reveal">
-      <span class="eyebrow"><span class="eyebrow__dot"></span>The State of Enterprise AI, 2026</span>
-      <h2>The investment is real. The returns are not. Here&#8217;s what the data actually says.</h2>
+<!-- RECOGNITION -->
+<section class="reco" aria-label="Recognition">
+  <div class="container--wide reco__in">
+    <h2 class="reco__headline">Trusted by global enterprises. Recognized by industry analysts.</h2>
+    <p class="reco__sub">The recognition executive teams trust</p>
+    <div class="reco__grid reveal">
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6953d213e1ac7e4cbade258c_image%2029.svg" alt="Gartner" loading="lazy"></span><span class="reco__cap">SaaS Management Platform, 2024 &amp; 2025</span></div>
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6953d2135526ab403373008a_image%20182.svg" alt="Info-Tech Research Group" loading="lazy"></span><span class="reco__cap">SaaS Management Platform, 2024 &amp; 2025</span></div>
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6953d213723783fb222d46c2_image%20191.svg" alt="Everest Group" loading="lazy"></span><span class="reco__cap">FinOps Peak Matrix&reg; Recognized, 2025</span></div>
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6953d423b542f0fde7cd30cd_image%20193%20(1).svg" alt="Chicago Innovation" loading="lazy"></span><span class="reco__cap">Chicago Innovation Awards, 2025</span></div>
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6953d213c9481d60eab9c5e4_image%20201.svg" alt="Gartner Peer Insights" loading="lazy"></span><span class="reco__cap">Gartner Peer Insights &middot; 4.9 / 5</span></div>
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6953d21351c755864e98d89f_image%20192.svg" alt="G2" loading="lazy"></span><span class="reco__cap">G2 &middot; 4.8 / 5</span></div>
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6a3ab8faa864a836ce4cbad2_gov-gcp-v2.png" alt="Google Cloud" loading="lazy"></span><span class="reco__cap">Google Cloud Technology Partner</span></div>
+      <div class="reco__item"><span class="reco__logo"><img src="https://cdn.prod.website-files.com/6604acd9adcf133022766040/6a3cc8803604e18be84fa7c4_ChatGPT%20Image%20Jun%2025%2C%202026%2C%2011_48_49%20AM.png" alt="FinOps Foundation" loading="lazy"></span><span class="reco__cap">FinOps Foundation Member</span></div>
     </div>
-    <div class="stat reveal"><div class="stat__num p" data-count="75" data-suffix="%">0%</div><div class="stat__label">of executives admit their AI strategy is &#8220;more for show&#8221; than real transformation</div></div>
-    <div class="stat reveal d1"><div class="stat__num a" data-count="42" data-suffix="%">0%</div><div class="stat__label">of companies abandoned most of their AI initiatives last year</div></div>
-    <div class="stat reveal d2"><div class="stat__num p" data-count="80" data-suffix="%">0%</div><div class="stat__label">of employees are already using unapproved AI tools &#8212; right now, in your org</div></div>
-    <div class="stat reveal d3"><div class="stat__num r" data-count="29" data-suffix="%">0%</div><div class="stat__label">of employees admit to actively resisting their company&#8217;s AI strategy</div></div>
+  </div>
+</section>
+
+<!-- FRAMEWORK (light) -->
+<section class="framework" id="framework" aria-labelledby="fw-h">
+  <div class="container--wide framework__in">
+    <span class="eyebrow"><span class="eyebrow__dot"></span>The Framework</span>
+    <h2 id="fw-h">The five governance failures behind enterprise AI.</h2>
+    <p class="framework__lead"><strong>88% of organizations now use AI. Only 36% can govern it.</strong> That gap between adoption and control is where enterprise value leaks &#8212; through five recurring governance failures. The principle underneath all of them is simple: <strong>you cannot govern what you cannot see.</strong></p>
+    <div class="spots reveal">
+      <div class="spot"><div class="spot__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg></div><div class="spot__n">01</div><div class="spot__t">Shadow AI</div></div>
+      <div class="spot"><div class="spot__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="spot__n">02</div><div class="spot__t">Runaway Token Costs</div></div>
+      <div class="spot"><div class="spot__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><div class="spot__n">03</div><div class="spot__t">Silent Failures</div></div>
+      <div class="spot"><div class="spot__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><div class="spot__n">04</div><div class="spot__t">Real-Time Risk</div></div>
+      <div class="spot"><div class="spot__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div><div class="spot__n">05</div><div class="spot__t">Stalled Returns</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EVIDENCE (dark) -->
+<section class="statband" aria-labelledby="ev-h">
+  <div class="container--wide">
+    <span class="eyebrow"><span class="eyebrow__dot"></span>The Evidence</span>
+    <h2 class="sec-title" id="ev-h">AI adoption is nearly universal. Governed, measurable returns are not.</h2>
+    <div class="statband__grid">
+      <div class="stat reveal"><div class="stat__num p" data-count="88" data-suffix="%">88%</div><div class="stat__label">of organizations now use AI in at least one function<span class="src">McKinsey, State of AI 2025</span></div></div>
+      <div class="stat reveal d1"><div class="stat__num a" data-count="39" data-suffix="%">39%</div><div class="stat__label">report measurable EBIT impact from AI at the enterprise level<span class="src">McKinsey, State of AI 2025</span></div></div>
+      <div class="stat reveal d2"><div class="stat__num r" data-count="95" data-suffix="%">95%</div><div class="stat__label">of enterprise generative-AI pilots show no measurable P&amp;L return<span class="src">MIT NANDA, 2025</span></div></div>
+      <div class="stat reveal d3"><div class="stat__num r" data-count="42" data-suffix="%">42%</div><div class="stat__label">abandoned most AI initiatives before production &#8212; up from 17%<span class="src">S&amp;P Global, 2025</span></div></div>
+    </div>
   </div>
 </section>
 
@@ -474,16 +480,16 @@
   <div class="container">
     <div class="problem__grid">
       <div class="reveal">
-        <span class="eyebrow eyebrow--danger"><span class="eyebrow__dot"></span>The Problem</span>
-        <h2 class="sec-title" id="problem-h">The AI race is on. Most enterprises are already <span class="grad-text">losing.</span></h2>
-        <p class="problem__body">In 2026, <strong>AI is no longer a pilot program.</strong> It is a board-level accountability. Yet the gap between enterprise AI spending and enterprise AI outcomes has never been wider.</p>
-        <p class="problem__body">Investments are climbing. Proof of ROI is scarce. The same boardrooms that approved seven-figure AI budgets are now asking uncomfortable questions &#8212; and the answers are being dressed up rather than diagnosed.</p>
-        <p class="problem__body">This isn&#8217;t a technology problem. <strong>It&#8217;s five structural blindspots</strong> that quietly stall even the most resource-rich AI strategies. And most leadership teams have never had the honest conversation to name them.</p>
+        <span class="eyebrow eyebrow--danger"><span class="eyebrow__dot"></span>The Real Problem</span>
+        <h2 class="sec-title" id="problem-h">Enterprises don&#8217;t fail for lack of AI. They fail when AI <span class="grad-text">outgrows governance.</span></h2>
+        <p class="problem__body">Enterprises rarely fail because they lack AI. They fail because <strong>AI expands faster than governance.</strong> Shadow AI spreads. Model and SaaS spend turn invisible. Agents gain access without oversight. Compliance loses line of sight, FinOps can&#8217;t attribute cost, and security discovers risk only after deployment.</p>
+        <p class="problem__body">CloudNuro&#8217;s position is direct: <strong>governance &#8212; not adoption &#8212; is now the defining challenge of enterprise AI.</strong></p>
+        <div class="problem__pov">Every AI initiative creates technical debt, financial debt, or governance debt. Executive teams must decide which debt they are willing to carry &#8212; and for how long.</div>
       </div>
       <div class="dcards">
-        <div class="dcard reveal"><div class="dcard__num p" data-count="4.6" data-prefix="$" data-suffix="T" data-decimals="1">$0T</div><div class="dcard__text"><strong>Enterprise AI investment projected for 2026.</strong> Yet only 29% of organizations report consistent, measurable ROI from their AI deployments. The investment is real. The returns are not.</div></div>
-        <div class="dcard reveal d1"><div class="dcard__num a" data-count="45" data-suffix="%">0%</div><div class="dcard__text"><strong>Report confirmed or suspected data leaks</strong> from unauthorized AI tools &#8212; shadow AI running unchecked in the same organizations that approved enterprise AI budgets.</div></div>
-        <div class="dcard reveal d2"><div class="dcard__num r" data-count="92" data-suffix="%">0%</div><div class="dcard__text"><strong>Of C-suites are creating an &#8220;AI Elite&#8221;</strong> &#8212; a small group of power users while the rest of the workforce stays disengaged, resistant, or afraid. No model fixes a culture gap.</div></div>
+        <div class="dcard reveal"><div class="dcard__num p" data-count="39" data-suffix="%">39%</div><div class="dcard__text"><strong>see enterprise-level financial impact from AI</strong> &#8212; even as 88% report using it. Adoption is not the constraint; governing it into compounding returns is. <span class="src">McKinsey, 2025</span></div></div>
+        <div class="dcard reveal d1"><div class="dcard__num a" data-count="20" data-suffix="%">20%</div><div class="dcard__text"><strong>have already been breached through shadow AI,</strong> at roughly $670K higher cost per incident. Ungoverned AI is now a measurable security and financial liability. <span class="src">IBM, Cost of a Data Breach 2025</span></div></div>
+        <div class="dcard reveal d2"><div class="dcard__num r" data-count="40" data-suffix="%">40%</div><div class="dcard__text"><strong>of agentic-AI projects will be canceled by 2027,</strong> Gartner forecasts &#8212; driven by runaway cost, unclear value, and inadequate controls. <span class="src">Gartner, 2025</span></div></div>
       </div>
     </div>
   </div>
@@ -493,111 +499,101 @@
 <section class="why2026" id="why-now-matters" aria-labelledby="why-h">
   <div class="container">
     <div class="reveal">
-      <span class="eyebrow"><span class="eyebrow__dot"></span>Why This Moment Is Different</span>
-      <h2 class="sec-title" id="why-h">2026 is not the year to still be learning on the job.</h2>
-      <p class="sec-sub">The competitors who figured this out 18 months ago are now compounding their advantage. <strong>Agentic AI has changed the cost model.</strong> Regulatory pressure has changed the risk model. And the workforce&#8217;s patience for performative AI strategies is at a breaking point. The window to course-correct &#8212; without losing ground &#8212; is now.</p>
+      <span class="eyebrow"><span class="eyebrow__dot"></span>Why 2026</span>
+      <h2 class="sec-title" id="why-h">2026 is the turning point &#8212; from adopting AI to governing it.</h2>
+      <p class="sec-sub">Organizations are moving beyond pilots into enterprise-wide deployment. Agents are beginning to make operational decisions. Foundation-model costs keep rising, regulatory expectations are accelerating, and boards are asking harder questions about AI accountability. <strong>The organizations that establish governance today will outperform those still chasing adoption tomorrow.</strong></p>
     </div>
     <div class="pillars">
-      <div class="pillar reveal"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><h3 class="pillar__title">The Compounding Gap</h3><p class="pillar__body">Every quarter your AI governance lacks structure, the cost of correction grows. Organizations that acted in 2024 now operate at fundamentally lower cost bases than those still running ungoverned pilots.</p></div>
-      <div class="pillar reveal d1"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3 class="pillar__title">Agentic AI Changed Everything</h3><p class="pillar__body">Token costs, attack surfaces, and governance failures multiply when agents start coordinating. The IT cost model from 2023 is obsolete. Most enterprises don&#8217;t yet have a replacement.</p></div>
-      <div class="pillar reveal d2"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="pillar__title">The People Problem Is Getting Worse</h3><p class="pillar__body">Workforce resistance isn&#8217;t softening. It&#8217;s hardening into sabotage. The organizations closing the adoption gap are doing so through culture architecture, not tool mandates.</p></div>
-      <div class="pillar reveal"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="pillar__title">Regulatory Pressure Arrived</h3><p class="pillar__body">EU AI Act enforcement, SEC disclosure requirements, and industry-specific frameworks are now real. Ungoverned AI deployments are a compliance liability, not just an operational one.</p></div>
-      <div class="pillar reveal d1"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h3 class="pillar__title">Board Scrutiny Is Intensifying</h3><p class="pillar__body">Boards are now asking for AI ROI attribution, not AI roadmaps. The era of buying time with strategy decks and pilot announcements is ending. Results are the only currency that matters now.</p></div>
-      <div class="pillar reveal d2"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3 class="pillar__title">Pilot-to-Production Is Still Broken</h3><p class="pillar__body">The capability to run a successful proof-of-concept has never been higher. The capability to scale it to production has not kept pace. Most AI initiatives still die in the handoff.</p></div>
+      <div class="pillar reveal"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><h3 class="pillar__title">The Compounding Gap</h3><p class="pillar__body">Only 39% of adopters see enterprise-level financial impact. Every quarter without a governance and FinOps model widens the distance to the leaders.</p></div>
+      <div class="pillar reveal d1"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3 class="pillar__title">Agents Now Make Decisions</h3><p class="pillar__body">As agents begin to act autonomously, cost, attack surface, and governance failures multiply. Gartner expects over 40% of agentic-AI projects to be canceled by 2027.</p></div>
+      <div class="pillar reveal d2"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="pillar__title">Trust Is Eroding</h3><p class="pillar__body">Worker trust in company-provided generative AI fell 31% in a single quarter. Adoption is won through change management and culture, not tool mandates.</p></div>
+      <div class="pillar reveal"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="pillar__title">Regulation Has Arrived</h3><p class="pillar__body">EU AI Act enforcement, SEC disclosure expectations, and sector frameworks are now real. Ungoverned AI is a compliance liability, not just an operational one.</p></div>
+      <div class="pillar reveal d1"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h3 class="pillar__title">Boards Demand Accountability</h3><p class="pillar__body">Boards now ask for AI ROI attribution, not AI roadmaps. The era of buying time with strategy decks and pilot announcements is closing.</p></div>
+      <div class="pillar reveal d2"><div class="pillar__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3 class="pillar__title">Model Costs Keep Rising</h3><p class="pillar__body">Foundation-model and token costs continue to climb. Without financial governance, AI spend scales faster than the value it is meant to create.</p></div>
     </div>
+    <p class="pov-line">Governance is becoming the operating system of enterprise AI.</p>
   </div>
 </section>
 
-<!-- BLINDSPOTS (interactive) -->
+<!-- DECISIONS -->
 <section class="blindspots" id="what-we-cover" aria-labelledby="bs-h">
   <div class="container--wide">
     <div class="bs-intro reveal">
       <span class="eyebrow"><span class="eyebrow__dot"></span>What This Summit Covers</span>
-      <h2 class="sec-title" id="bs-h">Five blindspots. Five conversations most leadership teams avoid.</h2>
-      <p>Each panel was designed from deep market research and practitioner best practices &#8212; not vendor decks or theoretical frameworks. These are the structural failure modes that industry leaders have identified as the real reasons AI transformations stall.</p>
+      <h2 class="sec-title" id="bs-h">Five decisions every executive team must make before scaling AI.</h2>
+      <p>Each decision maps to one of the five governance failures and is grounded in cited research and practitioner experience &#8212; not vendor decks. Select a decision to explore it.</p>
     </div>
-
     <div class="bs-show reveal d1">
-      <div class="bs-tabs" role="tablist" aria-label="The five blindspots">
-        <button class="bs-tab" role="tab" id="bt1" aria-controls="bp1" aria-selected="true">
-          <span class="bs-tab__n">01</span><span><span class="bs-tab__t">Performance Theater vs. Real Transformation</span><span class="bs-tab__h">75% admit AI is &#8220;more for show&#8221;</span></span>
-        </button>
-        <button class="bs-tab" role="tab" id="bt2" aria-controls="bp2" aria-selected="false" tabindex="-1">
-          <span class="bs-tab__n">02</span><span><span class="bs-tab__t">The Token Trap: The Hidden Cost of AI</span><span class="bs-tab__h">Consumption pricing, runaway spend</span></span>
-        </button>
-        <button class="bs-tab" role="tab" id="bt3" aria-controls="bp3" aria-selected="false" tabindex="-1">
-          <span class="bs-tab__n">03</span><span><span class="bs-tab__t">Ungoverned AI Sprawl</span><span class="bs-tab__h">80% use unapproved AI tools</span></span>
-        </button>
-        <button class="bs-tab" role="tab" id="bt4" aria-controls="bp4" aria-selected="false" tabindex="-1">
-          <span class="bs-tab__n">04</span><span><span class="bs-tab__t">The Human Adoption Problem</span><span class="bs-tab__h">29% actively resist AI strategy</span></span>
-        </button>
-        <button class="bs-tab" role="tab" id="bt5" aria-controls="bp5" aria-selected="false" tabindex="-1">
-          <span class="bs-tab__n">05</span><span><span class="bs-tab__t">From Pilot to Enterprise</span><span class="bs-tab__h">42% abandoned most AI initiatives</span></span>
-        </button>
+      <div class="bs-tabs" role="tablist" aria-label="The five decisions">
+        <button class="bs-tab" role="tab" id="bt1" aria-controls="bp1" aria-selected="true"><span class="bs-tab__n">01</span><span><span class="bs-tab__t">How do we measure real AI ROI?</span><span class="bs-tab__h">Silent failures</span></span></button>
+        <button class="bs-tab" role="tab" id="bt2" aria-controls="bp2" aria-selected="false" tabindex="-1"><span class="bs-tab__n">02</span><span><span class="bs-tab__t">Who owns AI spending?</span><span class="bs-tab__h">Runaway token costs</span></span></button>
+        <button class="bs-tab" role="tab" id="bt3" aria-controls="bp3" aria-selected="false" tabindex="-1"><span class="bs-tab__n">03</span><span><span class="bs-tab__t">Who governs AI &mdash; and shadow AI?</span><span class="bs-tab__h">Shadow AI &middot; real-time risk</span></span></button>
+        <button class="bs-tab" role="tab" id="bt4" aria-controls="bp4" aria-selected="false" tabindex="-1"><span class="bs-tab__n">04</span><span><span class="bs-tab__t">How do we win human adoption?</span><span class="bs-tab__h">Trust &amp; change</span></span></button>
+        <button class="bs-tab" role="tab" id="bt5" aria-controls="bp5" aria-selected="false" tabindex="-1"><span class="bs-tab__n">05</span><span><span class="bs-tab__t">What operating model scales to 2030?</span><span class="bs-tab__h">Stalled returns</span></span></button>
       </div>
-
       <div class="bs-panel-wrap">
         <div class="bs-panel active" role="tabpanel" id="bp1" aria-labelledby="bt1" data-idx="01 / 05">
-          <p class="bs-panel__kicker">Blindspot 01</p>
-          <h3 class="bs-panel__title">Performance Theater vs. Real Transformation</h3>
-          <span class="bs-panel__hook p">75% admit their AI strategy is &#8220;more for show&#8221; than substance.</span>
-          <p class="bs-panel__desc">The opening panel names the five structural failure modes separating AI transformers from AI laggards. Individual productivity gains are real. Organizational ROI is not compounding from them &#8212; and most leadership teams have never asked why. Boards are beginning to challenge performative AI strategies, and the executives caught without honest answers are the ones losing ground fastest.</p>
+          <span class="bs-panel__tag">Decision 01 &middot; Silent failures</span>
+          <h3 class="bs-panel__title">How do we measure real AI ROI?</h3>
+          <p class="bs-panel__hook p">95% of enterprise GenAI pilots show no measurable P&amp;L return &#8212; and only 39% of adopters see enterprise EBIT impact.</p>
+          <p class="bs-panel__src">MIT NANDA, 2025 &middot; McKinsey, 2025</p>
+          <p class="bs-panel__desc">Individual productivity gains are real, but they are not compounding into enterprise ROI &#8212; and most leadership teams have never asked why. This decision names the patterns that separate transformers from laggards, and how to give boards an honest, measurable answer before they ask for one.</p>
           <ul class="bs-panel__points">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Why individual productivity gains don&#8217;t compound into organizational ROI</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>The 5 structural patterns separating transformers from laggards &#8212; drawn from cross-industry practitioner data</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>How boards are beginning to challenge performative AI strategies, and how to get ahead of it</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Why individual productivity gains don&#8217;t compound into enterprise ROI</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>How to measure and attribute AI impact at the enterprise level</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>How boards are challenging performative AI &#8212; and how to get ahead of it</li>
           </ul>
         </div>
-
         <div class="bs-panel" role="tabpanel" id="bp2" aria-labelledby="bt2" data-idx="02 / 05" hidden>
-          <p class="bs-panel__kicker">Blindspot 02</p>
-          <h3 class="bs-panel__title">The Token Trap: The Hidden Cost of AI</h3>
-          <span class="bs-panel__hook a">Consumption pricing created a new class of runaway spend.</span>
-          <p class="bs-panel__desc">No token governance, no unit economics, no ROI attribution. Enterprises are flying blind on what AI actually costs &#8212; and agentic AI is making this exponentially worse. Most finance teams are reconciling invoices, not managing a new consumption model. This panel gives decision-makers the framework to connect every dollar of AI spend to a business outcome before it becomes a board conversation.</p>
+          <span class="bs-panel__tag">Decision 02 &middot; Runaway token costs</span>
+          <h3 class="bs-panel__title">Who owns AI spending?</h3>
+          <p class="bs-panel__hook a">Escalating, unpredictable cost is a leading reason Gartner expects 40%+ of agentic-AI projects to be canceled by 2027.</p>
+          <p class="bs-panel__src">Gartner, 2025</p>
+          <p class="bs-panel__desc">Consumption pricing created a new class of runaway spend: no token governance, no unit economics, no ROI attribution &#8212; and agentic AI multiplies the unpredictability. Most finance teams reconcile invoices instead of governing a consumption model. This decision establishes who owns AI cost, and how to operationalize a FinOps model for AI.</p>
           <ul class="bs-panel__points">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Token economics 101: why AI spend behaves unlike any prior IT cost model</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Token economics: why AI spend behaves unlike any prior IT cost model</li>
             <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Establishing token budgets, consumption dashboards, and workload attribution</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Connecting token spend to business outcomes &#8212; not just invoices</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Agent FinOps: why agentic AI multiplies cost unpredictability by an order of magnitude</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Connecting spend to business outcomes &#8212; not just invoices</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Agent FinOps: governing cost when agents consume autonomously</li>
           </ul>
         </div>
-
         <div class="bs-panel" role="tabpanel" id="bp3" aria-labelledby="bt3" data-idx="03 / 05" hidden>
-          <p class="bs-panel__kicker">Blindspot 03</p>
-          <h3 class="bs-panel__title">Ungoverned AI Sprawl</h3>
-          <span class="bs-panel__hook p">80% of employees use unapproved AI tools at work.</span>
-          <p class="bs-panel__desc">45% report confirmed or suspected data leaks from unauthorized AI &#8212; and most organizations couldn&#8217;t pull the plug on a rogue agent if they had to. Shadow AI is not a future risk. It is an active, ongoing condition in virtually every mid-to-large enterprise today. This panel moves past the handbrake governance model and gives you the architecture for speed with guardrails.</p>
+          <span class="bs-panel__tag">Decision 03 &middot; Shadow AI</span>
+          <h3 class="bs-panel__title">Who governs AI &mdash; and shadow AI?</h3>
+          <p class="bs-panel__hook p">80%+ of employees use unapproved AI tools, and 20% of organizations have already been breached through shadow AI.</p>
+          <p class="bs-panel__src">UpGuard, 2025 &middot; IBM, Cost of a Data Breach 2025</p>
+          <p class="bs-panel__desc">Shadow AI is not a future risk &#8212; it is an active condition in virtually every enterprise, and most organizations couldn&#8217;t pull the plug on a rogue agent if they had to. This decision defines ownership and moves past handbrake governance toward an architecture for speed with guardrails.</p>
           <ul class="bs-panel__points">
             <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Defining shadow AI: where governance breaks down and who owns it</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Building a &#8220;speed with guardrails&#8221; model &#8212; governance that enables, not blocks</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Agentic AI attack surfaces: why autonomous agents dramatically increase exposure</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Multi-tenant governance architecture for distributed organizations</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>A &#8220;speed with guardrails&#8221; model &#8212; governance that enables, not blocks</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Agentic attack surfaces: why autonomous agents increase exposure</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Multi-tenant governance for distributed organizations</li>
           </ul>
         </div>
-
         <div class="bs-panel" role="tabpanel" id="bp4" aria-labelledby="bt4" data-idx="04 / 05" hidden>
-          <p class="bs-panel__kicker">Blindspot 04</p>
-          <h3 class="bs-panel__title">The Human Adoption Problem</h3>
-          <span class="bs-panel__hook r">29% of employees admit to actively sabotaging AI strategy.</span>
-          <p class="bs-panel__desc">92% of C-suites are creating an &#8220;AI elite.&#8221; The tools are ready. The people are not &#8212; and no model fixes a culture gap. Organizations that win the adoption war are not winning with better technology. They&#8217;re winning with deliberate change management, psychological safety, and a workforce architecture built for transformation at scale.</p>
+          <span class="bs-panel__tag">Decision 04 &middot; Trust &amp; change</span>
+          <h3 class="bs-panel__title">How do we win human adoption?</h3>
+          <p class="bs-panel__hook r">Worker trust in company-provided generative AI fell 31% in a single quarter &#8212; and nearly half of CEOs say staff resist AI.</p>
+          <p class="bs-panel__src">Harvard Business Review, 2025 &middot; HR Dive, 2025</p>
+          <p class="bs-panel__desc">The tools are ready; the people are not &#8212; and no model fixes a culture gap. The organizations winning adoption aren&#8217;t winning with better technology. They win with deliberate change management, psychological safety, and a workforce architecture built for transformation at scale.</p>
           <ul class="bs-panel__points">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Building AI literacy across non-technical teams without triggering fear or resistance</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Change management playbooks for agentic AI rollouts at enterprise scale</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>The &#8220;AI Elite&#8221; trap: why empowering superstars creates organizational fragility</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Trust, resistance, and the psychology of adoption &#8212; what the data actually shows</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Building AI literacy across non-technical teams without triggering fear</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Change-management playbooks for agentic-AI rollouts at scale</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Why concentrating AI in a few power users creates organizational fragility</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Trust, resistance, and the psychology of adoption &#8212; what the data shows</li>
           </ul>
         </div>
-
         <div class="bs-panel" role="tabpanel" id="bp5" aria-labelledby="bt5" data-idx="05 / 05" hidden>
-          <p class="bs-panel__kicker">Blindspot 05</p>
-          <h3 class="bs-panel__title">From Pilot to Enterprise</h3>
-          <span class="bs-panel__hook p">42% of companies abandoned most AI initiatives last year.</span>
-          <p class="bs-panel__desc">The gap between a successful pilot and scalable production isn&#8217;t a model problem. It is structural. The organizations that crack it share four traits &#8212; and none of them are about technology. This closing panel walks through a practitioner-built 90-day audit framework designed specifically to close the pilot-to-production gap, with live Q&amp;A throughout.</p>
+          <span class="bs-panel__tag">Decision 05 &middot; Stalled returns</span>
+          <h3 class="bs-panel__title">What operating model scales to 2030?</h3>
+          <p class="bs-panel__hook p">42% of companies abandoned most AI initiatives before production &#8212; while vendor-built solutions succeed about 2&times; more often than internal builds.</p>
+          <p class="bs-panel__src">S&amp;P Global, 2025 &middot; MIT NANDA, 2025</p>
+          <p class="bs-panel__desc">The gap between a successful pilot and scalable production isn&#8217;t a model problem &#8212; it is structural. The organizations that crack it share a handful of traits, and none of them are about technology. This closing decision walks through a practitioner-built 90-day plan and the operating model that survives the next five years.</p>
           <ul class="bs-panel__points">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Diagnosing your organization&#8217;s specific blindspots &#8212; live self-assessment walkthrough</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Building a business-first AI roadmap: outcomes before infrastructure</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>The 4 traits of the 29% who achieve real ROI, and how to systematically build them</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Vendor-led vs. internal builds: why vendor deployments succeed 2x more often</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Diagnosing your organization&#8217;s specific gaps &#8212; live self-assessment</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Building a business-first operating model: outcomes before infrastructure</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>The traits shared by teams that achieve real ROI &#8212; and how to build them</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Why vendor-led deployments succeed roughly twice as often as internal builds</li>
           </ul>
         </div>
       </div>
@@ -605,84 +601,126 @@
   </div>
 </section>
 
-<!-- COUNCIL -->
+<!-- AGENDA -->
+<section class="agenda" id="agenda" aria-labelledby="ag-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><span class="eyebrow__dot"></span>Agenda</span>
+      <h2 class="sec-title" id="ag-h">Four hours. Five decisions. One operating model.</h2>
+      <p class="agenda__note">13 August 2026 &middot; 11:00 AM&ndash;3:00 PM EST. Times are Eastern and subject to change.</p>
+    </div>
+    <div class="timeline reveal d1">
+      <div class="tl-row"><div class="tl-time">11:00 AM</div><div><div class="tl-title">Opening Keynote &mdash; The Governance Gap</div><div class="tl-desc">Why 88% adoption has produced only 39% impact &#8212; and what the leaders do differently.</div></div></div>
+      <div class="tl-row"><div class="tl-time">11:20 AM</div><div><div class="tl-title">Decision 1 &mdash; How do we measure real AI ROI?</div><div class="tl-desc">Silent failures: the patterns that separate transformers from laggards.</div></div></div>
+      <div class="tl-row"><div class="tl-time">11:55 AM</div><div><div class="tl-title">Decision 2 &mdash; Who owns AI spending?</div><div class="tl-desc">Runaway token costs and the FinOps model that contains them.</div></div></div>
+      <div class="tl-row"><div class="tl-time">12:30 PM</div><div><div class="tl-title">Decision 3 &mdash; Who governs AI, and shadow AI?</div><div class="tl-desc">Real-time risk and an architecture for speed with guardrails.</div></div></div>
+      <div class="tl-row break"><div class="tl-time">1:05 PM</div><div><div class="tl-title">Networking Break</div><div class="tl-desc">Connect with peers and the executive council.</div></div></div>
+      <div class="tl-row"><div class="tl-time">1:20 PM</div><div><div class="tl-title">Decision 4 &mdash; How do we win human adoption?</div><div class="tl-desc">Trust, resistance, and change management at enterprise scale.</div></div></div>
+      <div class="tl-row"><div class="tl-time">1:55 PM</div><div><div class="tl-title">Decision 5 &mdash; What operating model scales to 2030?</div><div class="tl-desc">Stalled returns: a 90-day plan from pilot to governed deployment.</div></div></div>
+      <div class="tl-row"><div class="tl-time">2:30 PM</div><div><div class="tl-title">Live Executive Roundtable</div><div class="tl-desc">Open audience Q&amp;A &mdash; bring your specific situation.</div></div></div>
+      <div class="tl-row break"><div class="tl-time">2:55 PM</div><div><div class="tl-title">Closing &mdash; Your Next 90 Days</div><div class="tl-desc">The operating assets you leave with.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO SHOULD ATTEND -->
+<section class="audience" id="who" aria-labelledby="who-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><span class="eyebrow__dot"></span>Who Should Attend</span>
+      <h2 class="sec-title" id="who-h">Built for the leaders accountable for AI outcomes.</h2>
+      <p class="sec-sub">Every decision is framed for the executive team, not the engineering team. No technical background required. You&#8217;ll join 100+ enterprise leaders governing AI at real scale.</p>
+    </div>
+    <div class="audience__grid">
+      <div class="aud reveal"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>CIOs</div>
+      <div class="aud reveal"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>CTOs</div>
+      <div class="aud reveal d1"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>Chief Data Officers</div>
+      <div class="aud reveal d1"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>CISOs</div>
+      <div class="aud reveal d2"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>CFOs</div>
+      <div class="aud reveal d2"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/></svg></span>Heads of AI</div>
+      <div class="aud reveal d3"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7m0-4V3m8 18v-9m0-4V3m8 18v-5m0-4V3M1 14h6m2-6h6m2 8h6"/></svg></span>Transformation Leaders</div>
+      <div class="aud reveal d3"><span class="aud__ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span>Enterprise Architects</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXECUTIVE COUNCIL -->
 <section class="speakers" id="council" aria-labelledby="council-h">
   <div class="container">
     <div class="sp-head">
       <div class="reveal">
-        <span class="eyebrow"><span class="eyebrow__dot"></span>Meet the Thought-Leader Council</span>
-        <h2 class="sec-title" id="council-h">Insights from executives who have lived these problems.</h2>
+        <span class="eyebrow"><span class="eyebrow__dot"></span>The Executive Council</span>
+        <h2 class="sec-title" id="council-h">The leaders shaping enterprise AI governance.</h2>
       </div>
-      <p class="reveal d1">Every finding presented at this summit comes from deep market research and practitioner best practices &#8212; not vendor slides or consulting theory. This council is composed of enterprise leaders who have navigated these exact blindspots inside real organizations at real scale.</p>
+      <p class="reveal d1">An executive council spanning technology, finance, security, procurement, and digital transformation &#8212; leaders who have governed AI inside real organizations, bringing practitioner experience, not consulting theory.</p>
     </div>
     <div class="sp-grid">
       <article class="sp reveal">
-        <div class="sp__photo"><span class="sp__initials">SK</span><img src="speakers/shyam.jpg" alt="Shyam Kumar" loading="lazy" onerror="this.remove()"></div>
-        <div class="sp__body"><h3 class="sp__name">Shyam Kumar</h3><p class="sp__role">Founder &amp; CEO, CloudNuro.ai</p></div>
+        <div class="sp__photo"><span class="sp__initials">SK</span><img src="speakers/shyam-upscaled.jpg" alt="Shyam Kumar" loading="lazy" onerror="this.remove()"></div>
+        <div class="sp__body"><h3 class="sp__name">Shyam Kumar</h3><p class="sp__role">Founder &amp; CEO, CloudNuro.ai</p><p class="sp__ach">Building CloudNuro&#8217;s SaaS &amp; AI governance platform &mdash; recognized by Gartner, Info-Tech, and Everest Group.</p></div>
       </article>
       <article class="sp reveal d1">
-        <div class="sp__photo"><span class="sp__initials">PP</span><img src="speakers/pratul-upright.jpg" alt="Pratul Patel" loading="lazy" onerror="this.remove()"></div>
-        <div class="sp__body"><h3 class="sp__name">Pratul Patel</h3><p class="sp__role">Co-Founder &amp; Chief Product Officer, CloudNuro.ai</p></div>
+        <div class="sp__photo"><span class="sp__initials">PP</span><img src="speakers/pratul-white.jpg" alt="Pratul Patel" loading="lazy" onerror="this.remove()"></div>
+        <div class="sp__body"><h3 class="sp__name">Pratul Patel</h3><p class="sp__role">Co-Founder &amp; Chief Product Officer, CloudNuro.ai</p><p class="sp__ach">Leads product for CloudNuro&#8217;s AI FinOps and real-time governance platform.</p></div>
       </article>
       <article class="sp reveal d2">
-        <div class="sp__photo"><span class="sp__initials">SK</span><img src="speakers/Shailesh.png" alt="Shailesh Kumar" loading="lazy" onerror="this.remove()"></div>
-        <div class="sp__body"><h3 class="sp__name">Shailesh Kumar</h3><p class="sp__role">Chief Data Scientist, AI/ML CoE, Jio &middot; Dean, Jio Institute</p><p class="sp__cred">Former Google, Yahoo!, FICO &middot; PhD, UT Austin</p></div>
+        <div class="sp__photo"><span class="sp__initials">SK</span><img src="speakers/shailesh-white.jpg" alt="Shailesh Kumar" loading="lazy" onerror="this.remove()"></div>
+        <div class="sp__body"><h3 class="sp__name">Dr. Shailesh Kumar</h3><p class="sp__role">Chief Data Scientist, AI/ML CoE, Jio &middot; Dean, Jio Institute</p><p class="sp__ach">Led AI/ML initiatives across Google, Yahoo!, and FICO &middot; PhD, UT Austin.</p></div>
       </article>
       <article class="sp reveal">
         <div class="sp__photo"><span class="sp__initials">BR</span><img src="speakers/bala.jpg" alt="Balakrishna Reddy" loading="lazy" onerror="this.remove()"></div>
-        <div class="sp__body"><h3 class="sp__name">Balakrishna Reddy</h3><p class="sp__role">Chief Data Scientist &amp; VP, AI/ML Center of Excellence, Jio</p><p class="sp__cred">Speech / Multimodal &amp; Agentic AI &middot; M.Tech, IIT Kanpur</p></div>
+        <div class="sp__body"><h3 class="sp__name">Balakrishna Reddy</h3><p class="sp__role">Chief Data Scientist &amp; VP, AI/ML Center of Excellence, Jio</p><p class="sp__ach">Drives speech, multimodal, and agentic AI at Jio &middot; M.Tech, IIT Kanpur.</p></div>
       </article>
       <article class="sp reveal d1">
-        <div class="sp__photo"><span class="sp__initials">RR</span><img src="speakers/ravi.png" alt="Ravi Reddy" loading="lazy" onerror="this.remove()"></div>
-        <div class="sp__body"><h3 class="sp__name">Ravi Reddy</h3><p class="sp__role">Founder, Chairman &amp; CEO, Sunera Group</p><p class="sp__cred">Venture Partner, Pavestone VC</p></div>
+        <div class="sp__photo"><span class="sp__initials">RR</span><img src="speakers/ravi-white.jpg" alt="Ravi Reddy" loading="lazy" onerror="this.remove()"></div>
+        <div class="sp__body"><h3 class="sp__name">Ravi Reddy</h3><p class="sp__role">Founder, Chairman &amp; CEO, Sunera Group</p><p class="sp__ach">Enterprise-technology founder and Venture Partner at Pavestone VC.</p></div>
       </article>
       <article class="sp sp--more reveal d2">
         <div class="plus" aria-hidden="true">+</div>
-        <p>More Speakers To Be Announced. Stay tuned as additional industry leaders join the council.</p>
+        <p>More council members to be announced. Additional enterprise leaders are joining the stage.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- TAKEAWAYS -->
+<!-- TAKEAWAYS / EXECUTIVE ASSETS -->
 <section class="takeaways" id="takeaways" aria-labelledby="tk-h">
   <div class="container">
     <div class="reveal">
-      <span class="eyebrow"><span class="eyebrow__dot"></span>Key Takeaways</span>
-      <h2 class="sec-title" id="tk-h">What you leave with</h2>
-      <p class="sec-sub">Not theory. <strong>Six things you can put to work the week after the summit</strong> &#8212; frameworks, models, and tools drawn from what organizations that are winning are actually doing.</p>
+      <span class="eyebrow"><span class="eyebrow__dot"></span>What You Leave With</span>
+      <h2 class="sec-title" id="tk-h">Leave with the operating assets &#8212; not the notes.</h2>
+      <p class="sec-sub">Every attendee leaves with the frameworks to govern AI: <strong>blueprints, checklists, and scorecards you can operationalize the week after the summit.</strong></p>
     </div>
     <div class="tk-grid">
-      <article class="tk reveal"><div class="tk__num" aria-hidden="true">01</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3 class="tk__title">A Shared Language for the 5 Blindspots</h3><p class="tk__desc">A common framework your leadership team can use to name, own, and act on the five structural patterns hiding inside your AI strategy &#8212; and stop dancing around them.</p></article>
-      <article class="tk reveal d1"><div class="tk__num" aria-hidden="true">02</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3 class="tk__title">Token Economics Model</h3><p class="tk__desc">A way to tie your token spend to unit economics and real business outcomes &#8212; not just invoices. Built for CIOs and CFOs who need AI to speak the language of ROI.</p></article>
-      <article class="tk reveal d2"><div class="tk__num" aria-hidden="true">03</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="tk__title">&#8220;Speed with Guardrails&#8221; Governance Model</h3><p class="tk__desc">A governance architecture for shadow AI and agentic systems that enables velocity &#8212; not a handbrake. Covers multi-tenant environments and autonomous agent exposure.</p></article>
-      <article class="tk reveal"><div class="tk__num" aria-hidden="true">04</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="tk__title">Change-Management Playbook</h3><p class="tk__desc">A playbook that moves people, not just tools. Designed for leaders accountable for AI adoption across non-technical functions &#8212; no engineering background required.</p></article>
-      <article class="tk reveal d1"><div class="tk__num" aria-hidden="true">05</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3 class="tk__title">Practitioner-Built 90-Day Audit Framework</h3><p class="tk__desc">A structured framework to close the gap from pilot to production in 90 days. Built from the playbooks of organizations that have done it &#8212; not from consulting projections.</p></article>
-      <article class="tk reveal d2"><div class="tk__num" aria-hidden="true">06</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3 class="tk__title">Organization-Specific Blindspot Self-Assessment</h3><p class="tk__desc">A self-assessment tool to diagnose which of the five blindspots your organization is most exposed to &#8212; and where to focus first for the fastest structural improvement.</p></article>
+      <article class="tk reveal"><div class="tk__num" aria-hidden="true">01</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3 class="tk__title">Enterprise AI Governance Blueprint</h3><p class="tk__desc">A reference architecture to standardize how AI is governed across models, agents, and SaaS &#8212; and give leadership a shared language for the five governance failures.</p></article>
+      <article class="tk reveal d1"><div class="tk__num" aria-hidden="true">02</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3 class="tk__title">AI Operating Model Framework</h3><p class="tk__desc">Define who governs AI, who owns spend, and how decisions are made &#8212; the operating model that scales past pilots and survives to 2030.</p></article>
+      <article class="tk reveal d2"><div class="tk__num" aria-hidden="true">03</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3 class="tk__title">AI Financial Governance Checklist</h3><p class="tk__desc">Attribute every dollar of token and model spend to a business outcome, and operationalize FinOps for AI &#8212; built for CIOs and CFOs, not just invoices.</p></article>
+      <article class="tk reveal"><div class="tk__num" aria-hidden="true">04</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 class="tk__title">Executive AI Scorecard</h3><p class="tk__desc">Measure adoption, ROI, risk, and governance maturity on one board-ready page &#8212; so you can answer the questions boards are already asking.</p></article>
+      <article class="tk reveal d1"><div class="tk__num" aria-hidden="true">05</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><h3 class="tk__title">AI Policy &amp; Risk Framework</h3><p class="tk__desc">Institutionalize acceptable-use, access, and compliance controls for shadow AI and agents &#8212; governance that enables speed instead of blocking it.</p></article>
+      <article class="tk reveal d2"><div class="tk__num" aria-hidden="true">06</div><div class="tk__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3 class="tk__title">90-Day Pilot-to-Production Plan</h3><p class="tk__desc">A practitioner-built plan to move from experimentation to governed, enterprise-wide deployment &#8212; from teams that have done it, not consulting projections.</p></article>
     </div>
   </div>
 </section>
 
-<!-- WHY MISS -->
-<section class="whymiss" id="why-attend" aria-labelledby="wm-h">
+<!-- WHY JOIN -->
+<section class="whyjoin" id="why-attend" aria-labelledby="wj-h">
   <div class="container">
     <div class="reveal">
-      <span class="eyebrow"><span class="eyebrow__dot"></span>Why You Cannot Afford to Miss This</span>
-      <h2 class="sec-title" id="wm-h">The data in this room is not in your vendor&#8217;s deck.</h2>
+      <span class="eyebrow"><span class="eyebrow__dot"></span>Why Join Us</span>
+      <h2 class="sec-title" id="wj-h">The conversations shaping enterprise AI governance &mdash; in the open.</h2>
     </div>
-    <div class="whymiss__grid">
+    <div class="whyjoin__grid">
       <div class="reveal">
-        <p class="whymiss__lead">Every insight presented at this summit is sourced from deep market research, cross-industry practitioner data, and real-world deployment outcomes &#8212; not from AI vendors selling solutions to the problems they helped create. This is the conversation your advisory firms are having with their best clients. Now it&#8217;s available to every executive who registers.</p>
-        <ul class="whymiss__list">
-          <li><span class="whymiss__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><div><strong>Live Q&amp;A woven throughout every panel</strong><span>Not a one-way broadcast. The closing roundtable is built entirely around audience questions. Your specific situation gets addressed.</span></div></li>
-          <li><span class="whymiss__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><div><strong>Every session recorded &#8212; share with your team</strong><span>Registered attendees receive full access to all session recordings so the insights don&#8217;t stay in one inbox.</span></div></li>
-          <li><span class="whymiss__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><div><strong>Frameworks and materials delivered post-summit</strong><span>The 90-day audit framework, governance model, and self-assessment tool are sent to every attendee after the event.</span></div></li>
-          <li><span class="whymiss__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><div><strong>Framed as leadership decisions &#8212; zero technical background required</strong><span>CIOs, CTOs, Chief AI Officers, compliance leaders, transformation owners. Every panel is a business challenge, not an engineering problem.</span></div></li>
+        <ul class="whyjoin__list">
+          <li><span class="whyjoin__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><strong>Benchmark with 100+ enterprise leaders</strong><span>CIOs, CFOs, CTOs, CISOs, and Heads of AI working through governance, economics, adoption, and measurable ROI.</span></div></li>
+          <li><span class="whyjoin__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><strong>Evaluate how leading companies govern AI</strong><span>Real operating models for shadow AI, agentic systems, and real-time risk &#8212; not slideware.</span></div></li>
+          <li><span class="whyjoin__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span><div><strong>Decide the five questions that govern AI budgets</strong><span>Each framed as an executive decision, with cited research and a practitioner walkthrough.</span></div></li>
+          <li><span class="whyjoin__ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><div><strong>See real-time AI governance in action</strong><span>A live walkthrough of how CloudNuro governs AI in real time and optimizes token and model spend.</span></div></li>
         </ul>
       </div>
       <blockquote class="quote reveal d1">
-        <p class="quote__text">The organizations that will lead in 2027 are the ones willing to have the honest conversations in 2026. Blindspots don&#8217;t disappear when you ignore them. They compound.</p>
-        <p class="quote__attr">&#8212; Thought-Leader Council, CloudNuro Summit 2026</p>
+        <p class="quote__text">CloudNuro&#8217;s point of view is simple: the next generation of enterprise advantage will come from governing AI &#8212; not simply deploying it. Governance is becoming the operating system of enterprise AI.</p>
+        <p class="quote__attr">&#8212; CloudNuro</p>
       </blockquote>
     </div>
   </div>
@@ -696,13 +734,14 @@
       <h2 class="sec-title" id="faq-h" style="margin-inline:auto">Everything you need to know</h2>
     </div>
     <div class="faq__list">
-      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">What is Blindspots of AI Adoption?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>A virtual executive summit built around five candid panels, each exposing a structural blindspot that quietly stalls enterprise AI: performative strategy, runaway token cost, ungoverned sprawl, human resistance, and the pilot-to-production gap. Every insight is drawn from deep market research and practitioner best practices.</p></div></div>
-      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Who should attend?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Executives and leaders accountable for AI outcomes: CIOs, CTOs, Chief AI and Data Officers, enterprise architects, security and compliance leaders, and transformation owners. No technical background required &#8212; every panel is framed as a leadership challenge, not an engineering problem.</p></div></div>
-      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Is this event free?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Yes. The summit is completely free to attend. Register once and you&#8217;ll receive instant confirmation, a calendar invite, all session recordings, and the post-summit framework materials &#8212; at no cost.</p></div></div>
-      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Will the sessions be recorded?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Yes. Registered attendees receive access to all session recordings after the event, so you can revisit panels or share them with your team. The recordings are delivered to your inbox with no expiry.</p></div></div>
-      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Can I ask questions during the panel discussions?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Absolutely. Live Q&amp;A is woven throughout &#8212; not tacked on at the end. Several panels reserve dedicated time for audience questions, and the closing roundtable is built entirely around them. This is a conversation, not a broadcast.</p></div></div>
-      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Do I need technical expertise to attend?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>No. Every panel is framed as a leadership challenge, not a technical problem. The content is built for decision-makers, not engineers. If you&#8217;re accountable for AI outcomes at your organization, this is built for you.</p></div></div>
-      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Will I receive the presentation material after the event?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Yes. Attendees receive the key frameworks and materials, including the 90-day audit framework and the self-assessment tool, after the summit. These are practitioner-built resources you can put to work immediately.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">What is the Flagship AI Summit 2026?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>A free, virtual, panel-led executive summit on 13 August 2026 (11:00 AM&ndash;3:00 PM EST). Across five decisions it addresses the governance challenge behind enterprise AI &#8212; measuring ROI, owning AI spend, governing shadow AI, winning human adoption, and choosing an operating model that scales &#8212; each framed for the executive team and backed by cited research.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Who should attend?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Leaders accountable for AI outcomes: CIOs, CTOs, Chief Data Officers, CISOs, CFOs, Heads of AI, enterprise architects, and transformation leaders. No technical background required &#8212; every session is framed as a leadership decision, not an engineering problem.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false"><span>Who is this <em>not</em> for?</span><span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>It is not a hands-on technical workshop or a coding deep-dive. If you&#8217;re looking for model-tuning tutorials rather than the governance, economics, and adoption decisions behind scaling AI, this summit is likely not the right fit.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Is the event really free?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Yes &#8212; completely free to attend. Register once and you&#8217;ll receive instant confirmation, a calendar invite, session recordings, and the post-summit operating assets at no cost. Seats are limited.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">How long is the summit?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Four hours: 11:00 AM to 3:00 PM EST, including a networking break and a live executive roundtable. See the full agenda above.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Will sessions be recorded, and will materials be shared?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Yes. Registered attendees receive access to all session recordings after the event, along with the operating assets &#8212; the governance blueprint, operating-model framework, financial-governance checklist, executive scorecard, policy framework, and 90-day plan &#8212; to put to work or share with your team.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Will there be networking and live Q&amp;A?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Yes. Live Q&amp;A is woven throughout, a dedicated networking break connects you with peers and the council, and the closing executive roundtable is built entirely around audience questions. This is a conversation, not a broadcast.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-item__q" aria-expanded="false">Can I register multiple people from my team?<span class="faq-item__ic" aria-hidden="true">+</span></button><div class="faq-item__a"><p>Absolutely &#8212; each attendee should register individually so everyone receives their own confirmation, calendar invite, and operating assets. Many leadership teams attend together.</p></div></div>
     </div>
   </div>
 </section>
@@ -712,15 +751,14 @@
   <div class="container--wide">
     <div class="register__in">
       <div class="reveal">
-        <span class="eyebrow"><span class="eyebrow__dot"></span>Register</span>
+        <span class="eyebrow"><span class="eyebrow__dot"></span>Reserve Your Seat</span>
         <h2 class="sec-title" id="reg-h">Claim your seat at the summit.</h2>
-        <p class="register__body">Free to attend, virtual, and built for decision-makers. Confirmation and calendar invite land in your inbox instantly. The leaders who will navigate 2027 with confidence are the ones who had the honest conversations in 2026.</p>
+        <p class="register__body">Free to attend, virtual, and built for decision-makers. Confirmation and calendar invite land in your inbox instantly &#8212; and seats are limited. The leaders who navigate 2027 with confidence are the ones governing AI in 2026.</p>
         <ul class="register__perks">
           <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Free virtual event &#8212; no cost, ever</li>
-          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Reserved seat on confirmation</li>
-          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Instant confirmation email + calendar invite</li>
+          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Reserved seat + instant confirmation and calendar invite</li>
           <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>All session recordings delivered afterward</li>
-          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>90-day audit framework &amp; self-assessment tool included</li>
+          <li><span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Six executive operating assets included</li>
         </ul>
       </div>
       <div class="form-card reveal d1">
@@ -743,11 +781,32 @@
   </div>
 </section>
 
+<!-- SOURCES -->
+<section class="sources" aria-labelledby="src-h">
+  <div class="container">
+    <h2 id="src-h" class="sec-title" style="font-size:var(--fs-lg)">Sources</h2>
+    <ol>
+      <li>McKinsey &amp; Company, &#8220;The State of AI,&#8221; November 2025 &mdash; <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener noreferrer">mckinsey.com</a> (88% adoption; 39% enterprise-level EBIT impact).</li>
+      <li>MIT NANDA, &#8220;The GenAI Divide: State of AI in Business 2025&#8221; &mdash; reported by <a href="https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/" target="_blank" rel="noopener noreferrer">Fortune</a> (95% of GenAI pilots show no P&amp;L return; vendor-built tools succeed ~2&times; more often).</li>
+      <li>S&amp;P Global Market Intelligence, &#8220;Voice of the Enterprise: AI &amp; Machine Learning,&#8221; 2025 &mdash; <a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/generative-ai-shows-rapid-growth-but-yields-mixed-results" target="_blank" rel="noopener noreferrer">spglobal.com</a> (42% abandoned most AI initiatives, up from 17%).</li>
+      <li>Gartner, &#8220;Over 40% of Agentic AI Projects Will Be Canceled by End of 2027,&#8221; June 2025 &mdash; <a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027" target="_blank" rel="noopener noreferrer">gartner.com</a>.</li>
+      <li>Pacific AI, &#8220;2025 AI Governance Survey&#8221; &mdash; <a href="https://pacific.ai/2025-ai-governance-survey/" target="_blank" rel="noopener noreferrer">pacific.ai</a> (36% have a formal AI governance framework).</li>
+      <li>UpGuard, &#8220;The State of Shadow AI,&#8221; 2025 &mdash; <a href="https://www.upguard.com/resources/the-state-of-shadow-ai" target="_blank" rel="noopener noreferrer">upguard.com</a> (80%+ of employees use unapproved AI tools).</li>
+      <li>IBM, &#8220;Cost of a Data Breach Report 2025&#8221; &mdash; <a href="https://www.ibm.com/reports/data-breach" target="_blank" rel="noopener noreferrer">ibm.com</a> (20% breached via shadow AI; ~$670K higher cost).</li>
+      <li>Harvard Business Review, &#8220;Workers Don&#8217;t Trust AI. Here&#8217;s How Companies Can Change That,&#8221; November 2025 &mdash; <a href="https://hbr.org/2025/11/workers-dont-trust-ai-heres-how-companies-can-change-that" target="_blank" rel="noopener noreferrer">hbr.org</a> (31% drop in worker trust in company GenAI).</li>
+    </ol>
+    <p class="sources__note">Statistics are drawn from the published research above and presented for discussion during the summit. Figures reflect the cited reports at time of publication.</p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container--wide footer__in">
-    <svg role="img" aria-label="CloudNuro"><use href="#cn-logo"/></svg>
-    <p class="footer__note">Blindspots of AI Adoption Summit 2026<br>13 August 2026 &middot; Virtual &middot; Global &middot; Free to Attend</p>
+    <div>
+      <svg role="img" aria-label="CloudNuro"><use href="#cn-logo"/></svg>
+      <p class="footer__hosts">Hosted by <strong>CloudNuro</strong> &middot; Pavestone VC &middot; VentureDock &middot; Sunera Group</p>
+    </div>
+    <p class="footer__note">Flagship AI Summit 2026 &middot; Chicago Edition<br>13 August 2026 &middot; 11:00 AM&ndash;3:00 PM EST &middot; Virtual &middot; Free</p>
   </div>
 </footer>
 
@@ -756,7 +815,6 @@
   'use strict';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Scroll progress + nav shadow
   var nav = document.getElementById('nav'), progress = document.getElementById('progress');
   function onScroll(){
     var st = window.scrollY || document.documentElement.scrollTop;
@@ -766,13 +824,11 @@
   }
   onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Mobile drawer
   var burger = document.getElementById('burger'), drawer = document.getElementById('drawer'), open = false;
   function setDrawer(v){ open = v; drawer.classList.toggle('open', v); drawer.setAttribute('aria-hidden', String(!v)); burger.setAttribute('aria-expanded', String(v)); document.body.style.overflow = v ? 'hidden' : ''; }
   burger.addEventListener('click', function(){ setDrawer(!open); });
   drawer.querySelectorAll('[data-close]').forEach(function(a){ a.addEventListener('click', function(){ setDrawer(false); }); });
 
-  // Smooth anchor scroll
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
     a.addEventListener('click', function(e){
       var id = this.getAttribute('href'); if(id.length < 2) return;
@@ -780,64 +836,50 @@
     });
   });
 
-  // Blindspot tabs
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.bs-tab'));
   var panels = Array.prototype.slice.call(document.querySelectorAll('.bs-panel'));
   function selectTab(i){
-    tabs.forEach(function(t, k){
-      var on = k === i;
-      t.setAttribute('aria-selected', String(on));
-      t.tabIndex = on ? 0 : -1;
-    });
-    panels.forEach(function(p, k){
-      var on = k === i;
-      p.classList.toggle('active', on);
-      if(on){ p.hidden = false; } else { p.hidden = true; }
-    });
+    tabs.forEach(function(t,k){ var on=k===i; t.setAttribute('aria-selected',String(on)); t.tabIndex=on?0:-1; });
+    panels.forEach(function(p,k){ var on=k===i; p.classList.toggle('active',on); p.hidden=!on; });
   }
-  tabs.forEach(function(tab, i){
+  tabs.forEach(function(tab,i){
     tab.addEventListener('click', function(){ selectTab(i); });
     tab.addEventListener('keydown', function(e){
-      var idx = null;
-      if(e.key === 'ArrowDown' || e.key === 'ArrowRight') idx = (i + 1) % tabs.length;
-      else if(e.key === 'ArrowUp' || e.key === 'ArrowLeft') idx = (i - 1 + tabs.length) % tabs.length;
-      else if(e.key === 'Home') idx = 0;
-      else if(e.key === 'End') idx = tabs.length - 1;
-      if(idx !== null){ e.preventDefault(); selectTab(idx); tabs[idx].focus(); }
+      var idx=null;
+      if(e.key==='ArrowDown'||e.key==='ArrowRight') idx=(i+1)%tabs.length;
+      else if(e.key==='ArrowUp'||e.key==='ArrowLeft') idx=(i-1+tabs.length)%tabs.length;
+      else if(e.key==='Home') idx=0; else if(e.key==='End') idx=tabs.length-1;
+      if(idx!==null){ e.preventDefault(); selectTab(idx); tabs[idx].focus(); }
     });
   });
 
-  // FAQ accordion
   document.querySelectorAll('.faq-item__q').forEach(function(btn){
     btn.addEventListener('click', function(){
-      var item = this.closest('.faq-item'), isOpen = item.classList.contains('open');
+      var item=this.closest('.faq-item'), isOpen=item.classList.contains('open');
       document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-item__q').setAttribute('aria-expanded','false'); });
       if(!isOpen){ item.classList.add('open'); this.setAttribute('aria-expanded','true'); }
     });
   });
 
-  // Scroll reveal
-  if(reduce){
-    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
-  } else {
+  if(reduce){ document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); }); }
+  else {
     var revObs = new IntersectionObserver(function(entries){
       entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); revObs.unobserve(en.target); } });
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ revObs.observe(el); });
   }
 
-  // Count-up
-  function fmt(v, d){ return d ? v.toFixed(d) : Math.round(v).toLocaleString('en-US'); }
+  function fmt(v,d){ return d ? v.toFixed(d) : Math.round(v).toLocaleString('en-US'); }
   function animate(el){
-    var target = parseFloat(el.getAttribute('data-count')) || 0;
-    var pre = el.getAttribute('data-prefix') || '', suf = el.getAttribute('data-suffix') || '';
-    var dec = parseInt(el.getAttribute('data-decimals') || '0', 10);
-    if(reduce){ el.textContent = pre + fmt(target, dec) + suf; return; }
-    var dur = 1600, start = performance.now();
+    var target=parseFloat(el.getAttribute('data-count'))||0;
+    var pre=el.getAttribute('data-prefix')||'', suf=el.getAttribute('data-suffix')||'';
+    var dec=parseInt(el.getAttribute('data-decimals')||'0',10);
+    if(reduce){ el.textContent=pre+fmt(target,dec)+suf; return; }
+    var dur=1500, start=performance.now();
     (function step(now){
-      var p = Math.min((now - start) / dur, 1), e = 1 - Math.pow(1 - p, 3);
-      el.textContent = pre + fmt(e * target, dec) + suf;
-      if(p < 1) requestAnimationFrame(step);
+      var p=Math.min((now-start)/dur,1), e=1-Math.pow(1-p,3);
+      el.textContent=pre+fmt(e*target,dec)+suf;
+      if(p<1) requestAnimationFrame(step);
     })(performance.now());
   }
   var cObs = new IntersectionObserver(function(entries){
@@ -845,20 +887,29 @@
   }, { threshold: 0.5 });
   document.querySelectorAll('[data-count]').forEach(function(el){ cObs.observe(el); });
 
-  // Hide form skeleton once the 10ex embed mounts
-  var regForm = document.getElementById('regForm'), regSkeleton = document.getElementById('regSkeleton');
+  var target = Date.parse('2026-08-13T11:00:00-04:00');
+  var els = { d:document.getElementById('cd-d'), h:document.getElementById('cd-h'), m:document.getElementById('cd-m'), s:document.getElementById('cd-s') };
+  function pad(n){ return (n<10?'0':'')+n; }
+  function tick(){
+    var diff = target - Date.now();
+    if(diff <= 0){ if(els.d){ els.d.textContent='00'; els.h.textContent='00'; els.m.textContent='00'; els.s.textContent='00'; } return; }
+    var s=Math.floor(diff/1000);
+    if(els.d) els.d.textContent = Math.floor(s/86400);
+    if(els.h) els.h.textContent = pad(Math.floor(s%86400/3600));
+    if(els.m) els.m.textContent = pad(Math.floor(s%3600/60));
+    if(els.s) els.s.textContent = pad(s%60);
+  }
+  if(els.d){ tick(); setInterval(tick, 1000); }
+
+  var regForm=document.getElementById('regForm'), regSkeleton=document.getElementById('regSkeleton');
   if(regForm && regSkeleton){
-    var mo = new MutationObserver(function(muts){
-      for(var i=0;i<muts.length;i++){
-        var nodes = muts[i].addedNodes;
-        for(var j=0;j<nodes.length;j++){
-          var n = nodes[j];
-          if(n.nodeType === 1 && n !== regSkeleton && n.tagName !== 'SCRIPT'){ regSkeleton.style.display = 'none'; mo.disconnect(); return; }
-        }
-      }
+    var mo=new MutationObserver(function(muts){
+      for(var i=0;i<muts.length;i++){ var nodes=muts[i].addedNodes;
+        for(var j=0;j<nodes.length;j++){ var n=nodes[j];
+          if(n.nodeType===1 && n!==regSkeleton && n.tagName!=='SCRIPT'){ regSkeleton.style.display='none'; mo.disconnect(); return; } } }
     });
-    mo.observe(regForm, { childList: true, subtree: true });
-    setTimeout(function(){ if(regSkeleton) regSkeleton.style.display = 'none'; }, 8000);
+    mo.observe(regForm,{childList:true,subtree:true});
+    setTimeout(function(){ if(regSkeleton) regSkeleton.style.display='none'; }, 8000);
   }
 })();
 </script>
